@@ -109,7 +109,7 @@ sapply(words, katadasaR)
 #  "jakarta"  "seminar"     "guna"     "guru"     "ajar"     "mana" 
 ```
 
-# Acknowledgement
+### Acknowledgement
 
 [csharp-indonesia.com](http://www.csharp-indonesia.com/2014/07/algoritma-stemming-pencarian-kata-dasar.html)
 
