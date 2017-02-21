@@ -69,7 +69,7 @@ disqus: "nurandi-id"
 google_analytics: "UA-92182606-1"
 
 # Google Tag Manager ID
-gtm: "GTM-KXMLW7N"
+# gtm: "GTM-KXMLW7N"
 
 # Google webmaster
 google_site_verification: "4DJg4x5V5p2gt8TsgMYKArwfgQjvh-rKL29XqMsUNVA"
