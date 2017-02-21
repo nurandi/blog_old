@@ -2,126 +2,106 @@
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
-
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "https://www.nurandi.id"
 baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
-
 # Name of website
-title: My website
+title: Nur Andi Setiabudi
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Hi, I'm Andi. This is my personal blog where I talk about data, R code and other random stuff.
+
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Blog:
+    - Archive: "blog/"
+    - By Topic: "topic/"
+  About: "#"
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+    
+# --- Avatar & title image --- #
 
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-# title-img: /path/to/image
+# avatar: "/images/img/avatar-icon.png"
+title-img: "/img/avatar-icon.png"
+
 
 # --- Footer options --- #
 
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
+# Social links
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
+  name: Nur Andi Setiabudi
+  email: "nurandi@gmail.com"
+  facebook: nsetiabudi
+  github: nurandi
+  twitter: nurandi
+  google-plus: +NurAndiSetiabudi
+  linkedin: nurandi
 
-# Select which links to show in the footer
+# Social links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
   email: true
   twitter: true
-  google-plus: false
+  google-plus: true
   github: true
-  reddit: false
-  linkedin: false
-  xing: false
-  stackoverflow: false
-  snapchat: false
-  instagram: false
-  youtube: false
-  spotify: false
-  telephone: false
+  linkedin: true
 
-# Select which share links to show in posts
+# share links to show in posts
 share-links-active:
   twitter: true
   facebook: true
-  google: false
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "NURANDI.id"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
 
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+# Disqus shortname
+disqus: "nurandi-id"
+
+# Google Analytics ID
+google_analytics: "UA-92182606-1"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-KXMLW7N"
+
+# Google webmaster
+google_site_verification: "4DJg4x5V5p2gt8TsgMYKArwfgQjvh-rKL29XqMsUNVA"
+
+# Bing webmaster
+bing_site_verification: "019E6E83BD7D283A454F41125999278E"
 
 # Facebook App ID
 # fb_app_id: ""
 
-# Excerpt Word Length
-# Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
 
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
+# Excerpt word length
+excerpt_length: 70
 
-# --- Don't need to touch anything below here (but you can if you want) --- #
+# Title separator
+title-separator: "/"
 
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+
+# --- Additional options --- #
+
+# Output options
+timezone: "Asia/Jakarta"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:categories/:title/
 paginate: 5
+paginate_path: /page/:num/
 
 kramdown:
   input: GFM
 
-# Default YAML values (more information on Jekyll's site)
+# Default YAML values
 defaults:
   -
     scope:
@@ -129,8 +109,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      categories: "blog"
+      comments: true
+      social-share: true # sharing botton
+      share: twitter facebook linkedin # autoposting
   -
     scope:
       path: "" # all files
@@ -138,7 +120,7 @@ defaults:
       layout: "page"
       show-avatar: true
 
-# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
+# Use tags pages (not recommended in GitHub pages)
 link-tags: false
 
 # Exclude these files from production site
@@ -150,10 +132,16 @@ exclude:
   - CNAME
   - Vagrantfile
 
+# list of gems  
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+  
 # prose.io config
 prose:
   rooturl: '_posts'
-  media: 'img'
+  media: 'image'
   ignore:
     - 404.html
     - LICENSE
@@ -201,9 +189,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-
-gems:
-  - jekyll-paginate
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
