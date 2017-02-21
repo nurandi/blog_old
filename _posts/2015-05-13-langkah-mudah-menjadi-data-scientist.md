@@ -10,6 +10,7 @@ tags:
 redirect_from:
 - /artikel/langkah-mudah-menjadi-data-scientist
 - /2015/05/13/langkah-mudah-menjadi-data-scientist
+- /artikel/langkah-mudah-menjadi-data-scientist/
 
 ---
 Mmmm ... tidak terlalu mudah, memang. Berikut adalah delapan langkah
