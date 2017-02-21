@@ -1,4 +1,4 @@
-@import url("pygment_highlights.css");
+@import url("pygment_highlights-native.css");
 
 /* --- General --- */
 
@@ -82,6 +82,10 @@ img::-moz-selection {
 
 img {
   max-width: 100%;
+}
+
+.blog-post img {
+  width: 100%;
 }
 
 .disqus-comments {
@@ -554,9 +558,9 @@ footer .theme-by {
 }
 
 .caption {
-  text-align: center;
+  text-align: left;
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   font-style: italic;
   margin: 0;
   display: block;
@@ -639,21 +643,52 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
+
+/* --- Social media sharing section --- */
+
+#social-share-section {
+  margin-bottom: 30px;
+}
+
+
 /* --- Code blocks --- */
 
+p>code, 
+a>code, 
+li>code, 
+figcaption>code, 
+td>code,
+h1>code,
+h2>code,
+h3>code,
+h4>code,
+h5>code,
+h6>code
+ {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-size: .9em;
+  background: #fafafa;
+  border: 1px solid #f2f3f3;
+  border-radius: 4px;
+}
 pre {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5em;
+  color: #bbbbbb;
+  border: none;
 }
 pre code {
   white-space: pre;
 }
 pre.highlight, .highlight > pre, td.code pre {
-  background: #FAFAFA;
-  background-image: linear-gradient(#F9F9F9 50%, #FDFDFD 50%);
-  background-repeat: repeat;
-  background-size: 3em 3em;
-  background-position: 0px 10px;
+  background: #404040;
+  /*
+    background-image: linear-gradient(#F9F9F9 50%, #FDFDFD 50%);
+    background-repeat: repeat;
+    background-size: 3em 3em;
+    background-position: 0px 10px;
+  */
   border-left: 7px solid #444;
 }
 code table, code table td, code table th, code table tbody, code table tr,
@@ -675,8 +710,67 @@ td.gutter {
   padding-top: 3px;
 }
 
-/* --- Social media sharing section --- */
 
-#social-share-section {
-  margin-bottom: 30px;
+
+/* Custom CSS
+================================================================= */
+
+/* Avatar */
+@media only screen and (max-width: 504px) {
+  .navbar-custom .navbar-brand-logo img {
+    max-height: 100%;
+  }
+ 
+  .navbar-custom .navbar-brand-logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
 }
+
+/* Footer */
+footer .list-inline > li {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+}
+
+footer .copyright {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .credits {
+  margin-top: 10px;
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-style: italic;
+}
+
+footer .fa-heart {
+  color: #f08080;
+}
+
+
+/* Archive date & tag count */
+.archive-post-date, .archive-tag-count {
+  font-style: italic;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+
+h4.recent-posts-heading {
+  font-family: 'Lora', 'Times New Roman', serif;
+  color: #808080;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+
