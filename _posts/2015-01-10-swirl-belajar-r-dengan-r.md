@@ -5,7 +5,7 @@ date: 2015-01-10 23:10:12.000000000 +07:00
 type: post
 published: true
 status: publish
-permalink:/blog/swirl-belajar-r-dengan-r/ 
+
 categories:
 - R
 tags:
