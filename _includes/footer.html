@@ -154,21 +154,23 @@
 		  </li>
           {% endif %}
         </ul>
-        <p class="copyright text-muted">
-		  {{ site.author.name }}
-		  &nbsp;&bull;&nbsp;
-		  {{ site.time | date: '%Y' }}
-
-		  {% if site.url-pretty %}
-		  &nbsp;&bull;&nbsp;
-		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
-		  {% endif %}
-	    </p>
-	        <!-- Please don't remove this, keep my open source work credited :) -->
-		<p class="theme-by text-muted">
-		  Theme by
-		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-		</p>
+      <p class="copyright text-muted">
+        &#9400;
+          {{ site.time | date: '%Y' }}
+        &nbsp;&bull;&nbsp;
+          <a href="{{ site.url }}">{{ site.author.name }}</a>
+      </p>
+      <p class="credits">
+        <i class="fa fa-heart""></i>
+          &nbsp;&#61;&nbsp;f(
+            <a href="https://jekyllrb.com/">Jekyll</a>
+          &#44;&nbsp;
+            <a href="https://github.com/nurandi/nurandi.github.io">Github</a>
+          &#44;&nbsp;
+            <!-- Please don't remove this, keep my open source work credited :) -->
+            <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>)
+      </p>
+	        
       </div>
     </div>
   </div>
