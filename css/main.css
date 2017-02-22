@@ -807,6 +807,35 @@ iframe {
  border:0 none;
 }
 
+.scalable {
+  overflow: hidden;
+}
+
+.scalable iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.scalable .scalable-content {
+  height: 0;
+  position: relative;
+}
+
+.scalable-16x9 .scalable-content {
+  padding-bottom: 56.25%;
+}
+
+.scalable-10x3 .scalable-content {
+  padding-bottom: 33.33%;
+}
+
+
+
+
+
 
 
 
