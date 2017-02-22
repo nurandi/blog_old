@@ -7,6 +7,8 @@ published: true
 status: publish
 tags:
 - sql
+excerpt: OVER PARTITION adalah salah satu fitur SQL yang sangat saya andalkan, 
+  sehingga jangan heran jika banyak *script* yang saya tulis mengandung fungsi itu di dalamnya.
 redirect_from:
 - /2015/05/09/over-dan-partition-by-pada-sql/
 - /sql/over-dan-partition-by-pada-sql/
@@ -20,7 +22,7 @@ Apa sebenarnya fungsi dari fitur ini dan bagaimana penggunaannya. Mari
 kita lihat apa dan bagaimana fungsi OVER dan PARTITION BY pada SQL
 bekerja.
 
-# `OVER`
+## `OVER`
 
 Digunakan untuk mendapatkan nilai aggregat (seperti `SUM`, `AVG`,
 `COUNT`, `MIN`, `MAX`) tanpa menggunakan `GROUP BY`. Dengan `OVER` kita
@@ -77,7 +79,7 @@ Akan menghasilkan:
 -   `OVER` : untuk semua baris
 -   `()` : secara keseluruhan
 
-# `OVER (PARTITION BY)`
+## `OVER (PARTITION BY)`
 
 Pada contoh di atas, `Sum_qty` adalah jumlah `Qty` dari seluruh baris
 yang ada pada dataset. Kita dapat memisahkan hasil perhitungan dengan
@@ -154,7 +156,7 @@ Mudah bukan?
 
 Berikut dua contoh penggunaan fungsi `OVER PARTITION` :
 
-# Menghilangkan duplikat
+### Menghilangkan duplikat
 
 Dari setiap region akan diambil satu baris saja, yaitu baris dengan Qty
 terendah. Untuk tujuan ini kita dapat menggunakan fungsi aggregat
@@ -176,7 +178,7 @@ WHERE Obs = 1;
     | west   | camera   |  65 |
     | east   | software | 125 |
 
-# Mengambil sekian persen per kategori
+### Mengambil sekian persen per kategori
 
 Dari setiap region akan diambil "Top 50% Product".
 

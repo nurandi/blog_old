@@ -5,6 +5,8 @@ date: 2015-01-27 16:28:10.000000000 +07:00
 type: post
 published: true
 status: publish
+excerpt: Ada berbagai macam grafik yang bisa digunakan. Untuk data visualisasi 
+  data teks, word cloud adalah salah satu pilihan.
 tags:
 - R
 - data-viz
@@ -47,7 +49,7 @@ Secara garis besar, pembuatan *word cloud* dengan *package* `wordcloud`
 dapat dikerjakan dalam dua tahap, yaitu persiapan data dan pembuatan
 *word cloud* itu sediri.
 
-## **Persiapan data**
+### Persiapan data
 
 Sebagai ilustrasi kita coba buat *word cloud* dari naskah pidato pertama
 Presiden RI ke-7 sesaat setelah dilantik. Naskah tersebut didapat dari
@@ -86,7 +88,7 @@ text = data.frame(table(text))
 *Data frame* `text` terdiri dari dua kolom, yaitu `text` atau daftar
 kata-kata tunggal serta `Freq` yang merupakan frekuensinya.
 
-## **Membuat word cloud**
+### Membuat word cloud
 
 Dalam R, *word cloud* dapat dibuat menggunakan *package* `wordcloud`
 yang ditulis oleh **Ian Fellows**. Instal package `wordcloud` dari

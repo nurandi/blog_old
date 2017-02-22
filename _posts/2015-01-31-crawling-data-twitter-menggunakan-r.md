@@ -5,6 +5,8 @@ date: 2015-01-31 01:58:34.000000000 +07:00
 type: post
 published: true
 status: publish
+excerpt: Dalam artikel ini kita akan berdiskusi tentang bagaimana mengambil
+  atau crawling data Twitter menggunakan R memnafaatkan API yang disediakan oleh Twitter.
 tags:
 - R
 - twitter
@@ -52,7 +54,7 @@ Dalam artikel ini kita akan berdiskusi tentang bagaimana mengambil atau
 (Facebook, Instagram, dan lain-lain), *Insya Allah* akan kita bahas pada
 kesempatan lain.
 
-# Instal *package* `twitteR`
+## Instal *package* `twitteR`
 
 **`twitteR`** (ditulis oleh
 [geoffjentry](https://github.com/geoffjentry/twitteR)) adalah *R
@@ -71,7 +73,7 @@ Lebih lengkap tentang bagaimana menginstall *package* `twitteR` dapat
 dilihat pada [artikel
 ini](http://nurandi.net/socmed/twitter-authentication-dengan-r/).
 
-# Twitter authentication
+## Twitter authentication
 
 Agar R dapat digunakan untuk mengekstrak data Twitter, terlebih dahulu
 kita harus mengirim sebuah *secure authorized requests* ke Twitter API.
@@ -99,7 +101,7 @@ Biasanya saya jawab `2`.
 Oke, pada tahapan ini kita sudah mendapatkan *secure connection* ke
 Twitter API dan R siap untuk mengambil data.
 
-# *Search Twitter*
+## *Search Twitter*
 
 Untuk mendapatkan tweet yang berisi kata (*keyword*) tertentu, misalnya
 "bogor", dapat dilakukan dengan fungsi berikut:
@@ -126,7 +128,7 @@ kata "bogor". Berikut adalah lima tweet pertama pada objek `tw.bogor`:
     [[5]]
     [1] "KiteIPB: RT @Fithriyyah_27: KPMKB adlh organisasi mahasiswa KalBar yg berdomisili di Bogor @KiteIPB #MakeAChoice"
 
-# *Get Users*
+## *Get Users*
 
 Untuk lihat profil satu akun twitter, misalnya nama, deskripsi, jumlah
 *follower* dan *following* dan jumlah tweet, gunakan fungsi `getUser()`:
@@ -167,7 +169,7 @@ banyak akun, gunakan fungsi `lookupUsers()`. Contohnya:
 users = lookupUsers(c("nurandi","prabowo08","jokowi_do2"))
 ```
 
-# *Timeline*
+## *Timeline*
 
 Kita juga bisa meng-*crawl* *timeline* atau status twitter dari satu
 atau beberapa akun. Caranya :

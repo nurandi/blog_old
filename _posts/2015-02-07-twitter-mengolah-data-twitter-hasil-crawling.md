@@ -5,6 +5,8 @@ date: 2015-02-07 01:56:51.000000000 +07:00
 type: post
 published: true
 status: publish
+excerpt: Kali ini mari kita bahas bagaimana mengolah data hasil crawling
+  dari Twitter. Raw-data yang diperoleh sebagian besar berupa list.
 tags:
 - r
 - twitter
@@ -26,7 +28,7 @@ data twitter hasil crawling, kita harus mengenal objek-objek tersebut.
 Berikut penjelasan lebih detail mengenai objek *status* dan objek
 *user*:
 
-# Objek *status*
+## Objek *status*
 
 Dihasilkan oleh fungsi `searchTwitter()` dan `userTimeline()`, misalnya:
 
@@ -77,7 +79,7 @@ Dari output di atas kita dapat lihat bahwa objek *status* terdiri dari
 17 variabel (*text, favorited, ..., urls*). Gunakan perintah `?status`
 pada *R console* untuk mengetahui keterangan tiap-tiap variabel.
 
-# Objek *user*
+## Objek *user*
 
 Dihasilkan oleh fungsi `getUser()` dan `lookupUsers()`, misalnya:
 
@@ -153,7 +155,7 @@ Berikut adalah keluaran dari fungsi `str(user)`.
 Objek `user` terdiri dari 18 variabel. Untuk mengatahui penjelasan
 masing-masing variabel, buka dokumentasi dengan perintah `?user`.
 
-# Mengakses variabel/kolom
+## Mengakses variabel/kolom
 
 Kolom-kolom pada objeck `status` maupun `user` dapat diakses dengan
 menggunakan fungsi `sapply(<nama-objek>,<nama-kolom>)`. Misalnya,
@@ -176,7 +178,7 @@ menggunakan fungsi `sapply(<nama-objek>,<nama-kolom>)`. Misalnya,
   nfollowers = sapply(users, followersCount)
   ```
 
-# Konversi ke *data frame*
+## Konversi ke *data frame*
 
 Objek *status* maupun *user* dapat dikonversi menjadi *data frame*
 dengan fungsi `twListToDF()`. Misalnya:
