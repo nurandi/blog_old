@@ -5,11 +5,6 @@ date: 2015-01-10 23:10:12.000000000 +07:00
 type: post
 published: true
 status: publish
-<<<<<<< HEAD
-=======
-
-
->>>>>>> a367e1bb55aa1dd434525b8923072eba3d177fd7
 tags:
 - R
 - swirl
