@@ -12,7 +12,7 @@ redirect_from:
 - /2015/08/15/ekspor-data-r-ke-text-file/
 ---
 Beberapa waktu lalu, di kolom
-[komentar]({{ site.url }}{{ site.baseurl }}/blog/mengolah-data-twitter-hasil-crawling/#comment1)
+[komentar]({{ site.url }}{{ site.baseurl }}/blog/twitter-mengolah-data-twitter-hasil-crawling/#comment1)
 dalam blog ini, ada yang nanya bagaimana caranya ekspor data dari R ke
 file CSV *(comma separated values)*. Oke, di sini akan saya jelaskan.
 
