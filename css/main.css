@@ -824,6 +824,10 @@ iframe {
   position: relative;
 }
 
+.scalable-4x3 .scalable-content {
+  padding-bottom: 75%;
+}
+
 .scalable-16x9 .scalable-content {
   padding-bottom: 56.25%;
 }
