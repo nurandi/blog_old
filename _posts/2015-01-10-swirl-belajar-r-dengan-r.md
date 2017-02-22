@@ -85,5 +85,5 @@ Berikut adalah daftar materi yang disediakan oleh swirl:
     pengujian hipotesis, selang kepercayaan (*confidence intervals*) dan
     nilai-*p* (*p-value*).
 
-Selengkapnya bisa lihat [di halaman Github
+Selengkapnya bisa lihat repo [Github
 ini](https://github.com/swirldev/swirl_courses/). Selamat mencoba :)
