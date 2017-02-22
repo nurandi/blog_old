@@ -58,7 +58,7 @@ Twitter *authentication* menggunakan ROAuth dan httr
 Proses autentikasi Twitter dengan menggunakan **ROAuth** dan **httr**
 dapat dilakukan dengan tahapan sebagai berikut.
 
-## *Install package*
+## Install package
 
 Bisa dari [CRAN](https://cran.r-project.org/):
 
@@ -73,7 +73,7 @@ library(devtools)
 install_github(c("geoffjentry/ROAuth", "hadley/httr")
 ```
 
-## *Generate access token*
+## Generate access token
 
 Setiap *request* ke API Twitter membutuhkan "sepaket" *credentials* yang
 terdiri dari *consumer key (API key)*, *consumer secret (API secret)*,
@@ -159,7 +159,7 @@ accessToken <- creds$oauthKey
 accessTokenSecret <- creds$oauthSecret
 ```
 
-## *Twitter token*
+## Twitter token
 
 Setelah mendapatkan *consumer key* dan *access token*, inilah saatnya
 kita membuat *Twitter token* yang mengemas semua data yang

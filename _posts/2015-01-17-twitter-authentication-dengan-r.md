@@ -9,7 +9,7 @@ tags:
 - R
 - twitter
 excerpt: Agar dapat mengambil data dari Twitter, R harus mendapatkan authentication.
-  Berikut ini proses mendapatkan twitter authentication dengan R.
+  Berikut ini proses dalam melakukan authentication dengan R.
 redirect_from:
 - /sosmed/twitter-authentication-dengan-r/
 - /2015/01/17/twitter-authentication-dengan-r/
@@ -22,7 +22,7 @@ available for free*. Agar R dan Twitter terhubung dengan baik, terlebih
 dahulu kita harus mendapatkan *authentication*. Berikut adalah proses
 twitter *authentication* dengan R:
 
-# Mendapatkan *API key* dan *access token*
+## Mendapatkan *API key* dan *access token*
 
 Kita harus mempunyai *API key* dan *access token* dari Twitter. Caranya
 sangat mudah. Kita hanya perlu membuat aplikasi pada Twitter.
@@ -48,7 +48,7 @@ sangat mudah. Kita hanya perlu membuat aplikasi pada Twitter.
     key)*, *consumer secret (API secret)*, *access token* dan *access
     token secret*.
 
-# Install `twitteR` dari [GitHub](https://github.com/geoffjentry/twitteR)
+## Install `twitteR` dari [GitHub](https://github.com/geoffjentry/twitteR)
 
 Instal versi terbaru paket `twitteR` dari
 [GitHub](https://github.com/geoffjentry/twitteR):
@@ -69,7 +69,7 @@ Panduan lebih lengkap tentang bagaimana menginstal *R package* bisa
 dilihat pada artikel [Menginstal R
 Package](http://nurandi.net/r/menginstal-r-package/).
 
-# Twitter Authentication dengan R
+## Twitter Authentication dengan R
 
 Proses *authentication* dilakukan menggunakan fungsi
 `setup_twitter_oauth()` dengan format:

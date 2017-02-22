@@ -7,8 +7,8 @@ published: true
 status: publish
 tags:
 - markdown
-excerpt: Berbeda dengan HTML, kita dapat menulis dan menata format teks dengan Markdown
-  secara lebih mudah dan sederhana seperti contoh berikut.
+excerpt: Markdown merupakan alternatif untuk menulis konten web tanpa tag HTML,
+  yaitu dengan hanya menuliskan teks biasa ditambah simbol-simbol yang umum digunakan.
 redirect_from:
 - /blogging/format-teks-dengan-markdown/
 - /2015/01/11/format-teks-dengan-markdown/
@@ -43,7 +43,7 @@ terlebih dahulu menginstal dan mengaktifkan plugin
 [WP-Markdown](https://wordpress.org/plugins/wp-markdown/) atau
 [JetPack](https://wordpress.org/plugins/jetpack/).
 
-# Bagaimana menggunakan Markdown?
+## Bagaimana menggunakan Markdown?
 
 Berikut adalah contoh bagaimana menata format teks dengan Markdown.
 
@@ -184,7 +184,7 @@ Selamat mencoba.
 
 ------------------------------------------------------------------------
 
-# R Markdown — Dynamic Documents for R
+## R Markdown — Dynamic Documents for R
 
 [R Markdown](http://rmarkdown.rstudio.com/) adalah paket R yang
 mengkombinasikan sintaks Markdown dengan kode R untuk membuat dokumen,

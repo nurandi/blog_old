@@ -27,7 +27,7 @@ meng-*uninstall* *package* dan sebagainya. Berikut ini adalah beberapa
 fungsi untuk mengelola R package yang saya kutip dari [R FAQ
 ini](http://www.ats.ucla.edu/stat/r/faq/packages.htm).
 
-# Memeriksa package apa saja yang sudah terinstal
+## Memeriksa package apa saja yang sudah terinstal
 
 Untuk melihat daftar *package* yang sudah terinstal gunakan fungsi
 `installed.packages()`. Fungsi tersebut menghasilkan sebuah matriks yang
@@ -48,7 +48,7 @@ colnames(x)
 nrow(x)
 ```
 
-# Memeriksa apakah suatu package telah terinstal
+## Memeriksa apakah suatu package telah terinstal
 
 Terkadang kita ingin mengetahui apakah suatu *package*, misalnya
 `twitteR`, telah terinstal atau belum. Fungsi `is.element()` dapat
@@ -61,7 +61,7 @@ is.element("twitteR", x[,1])
 di mana `x` adalah output dari fungsi `installed.packages()`. Jika sudah
 terinstal, R *console* akan menjawab `TRUE`.
 
-# Mengetahui package apa saja yang tersedia
+## Mengetahui package apa saja yang tersedia
 
 Fungsi `available.packages()` menampilkan *package* apa saja yang
 tersedia. Fungsi tersebut menghasilkan sebuah matriks yang merinci semua
@@ -77,12 +77,12 @@ R console menampilkan angka **6147**. Artinya, tersedia lebih dari 6
 ribu *package* di repositori CRAN yang dapat kita download/instal.
 **Fantastis**.
 
-# Menghapus package dari *library*
+## Menghapus package dari *library*
 
 Berkebalikan dengan `install.packages()`, fungsi `remove.packages()`
 berguna untuk menghapus (meng-*uninstall*) *package* dari *library*.
 
-# Menampilkan informasi tentang suatu package
+## Menampilkan informasi tentang suatu package
 
 Dokumentasi tentang sebuah *package* yang **sudah terinstal** dapat
 ditampilkan dengan fungsi `help()`. Misalnya:
