@@ -5,6 +5,8 @@ date: 2015-02-19 04:34:10.000000000 +07:00
 type: post
 published: true
 status: publish
+excerpt: Ini bukan tentang novel "50 Shades of Gray" karya E.L. James, 
+  melainkan tentang gradasi warna hitam ke putih (abu-abu atau *grey*) dalam R
 tags:
 - R
 redirect_from:

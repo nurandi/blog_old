@@ -5,6 +5,8 @@ date: 2015-02-19 00:47:36.000000000 +07:00
 type: post
 published: true
 status: publish
+excerpt: Pada kuarter ke-4 2014, R menempati urutan ke-12 sebagai bahasa
+  pemrograman dengan jumlah repositori aktif terbanyak (34K repositori)
 tags:
 - R
 redirect_from:
