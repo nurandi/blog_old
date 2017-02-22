@@ -78,7 +78,7 @@ map <- leaflet() %>%
 map
 ```
 
-<div class="scalable scalable-16-9">
+<div class="scalable scalable-16x9">
   <div class="scalable-content">
     <iframe src="/src/leaflet-map-bundaran-HI.html"></iframe>
   </div>
@@ -165,7 +165,7 @@ tweetsmap <- leaflet(data = tweets) %>%
 tweetsmap
 ```
 
-<div class="scalable scalable-16-9">
+<div class="scalable scalable-16x9">
   <div class="scalable-content">
     <iframe src="/src/leaflet-map-tweets.html"></iframe>
   </div>
@@ -220,7 +220,7 @@ eksplisit, `addMarker()` akan mencari kolom `lat/latitude` dan
 Ini adalah hasil akhir yang kita peroleh. *Klik pada titik cluster untuk
 memperbesar peta!*
 
-<div class="scalable scalable-16-9">
+<div class="scalable scalable-16x9">
   <div class="scalable-content">
     <iframe src="/src/leaflet-map-tweets-cluster.html"></iframe>
   </div>
