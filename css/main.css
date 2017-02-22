@@ -514,7 +514,7 @@ footer .theme-by {
     padding: 150px 0;
   }  
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
   .intro-header .post-heading h1 {
     font-size: 50px;
@@ -753,7 +753,7 @@ footer .credits {
 }
 
 footer .fa-heart {
-  color: #f08080;
+  color: #e54c6e;
 }
 
 
@@ -765,6 +765,9 @@ footer .fa-heart {
   padding-left: 5px;
 }
 
+
+/* Heading */
+
 h4.recent-posts-heading {
   font-family: 'Lora', 'Times New Roman', serif;
   color: #808080;
@@ -772,5 +775,39 @@ h4.recent-posts-heading {
   font-style: italic;
   font-weight: normal;
 }
+
+@media only screen and (max-width: 414px) {
+  .intro-header .page-heading h1 {
+    font-size: 40px;
+  }
+  
+  .h1, h1 {
+    font-size: 30px;
+  }
+  
+  .h2, h2 {
+    font-size: 24px;
+  }
+  
+  .h3, h3 {
+    font-size: 18px;
+  }
+  
+  .h4, h4 {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+}
+
+
+/* iframe */
+
+iframe {    
+ border:0 none;
+}
+
+
+
 
 
