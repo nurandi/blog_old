@@ -1,0 +1,9 @@
+{% if site.online_analytics %}
+  <script type="text/javascript">
+      var _tar= {};_tar.ID="{{ site.online_analytics }}";
+  </script>
+
+  <script src='https://track.analytic.rocks/load/' async>
+  </script>
+{% endif %}
+
