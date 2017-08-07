@@ -91,7 +91,7 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
 Kita harus mempunyai Twitter *application* untuk mendapatkan *API key,
 API secret, access token* dan *access token secret*. Bagaimana membuat
 Twitter *application* dan mendapatkan token bisa dilihat pada [artikel
-ini](http://nurandi.net/socmed/twitter-authentication-dengan-r/).
+ini](https://www.nurandi.id/blog/twitter-authentication-dengan-r/).
 
 Ketika fungsi dijalankan `setup_twitter_oauth()`, *R console* akan
 menanyakan:
