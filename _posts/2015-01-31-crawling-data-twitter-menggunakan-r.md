@@ -211,4 +211,4 @@ detail seperti kapan tweet tersebut di *posting*, ada berapa jumlah
 *follower* dari akun yang mem-*posting* tweet tertentu? Atau, bisa tidak
 kita simpan hasil *crawling* tersebut ke file .csv misalnya? Tentu saja
 bisa. Yang harus kita lakukan adalah melakukan sedikit manipulasi data.
-Kita akan mendiskusikan ini pada artikel selanjutnya. :)
+Silakan simak artikel [berikut](https://www.nurandi.id/blog/twitter-mengolah-data-twitter-hasil-crawling/) :)
