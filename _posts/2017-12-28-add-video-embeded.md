@@ -23,7 +23,7 @@ dengan memanfaatkan [Leaflet](http://leafletjs.com/), salah satu
 *JavaScript library* untuk pemetaan yang sangat populer dan tentu saja
 *open-source*.
 
-{% include vimeoPlayer.html id=post.vimeoId %}
+{% include vimeoPlayer.html id=page.vimeoId %}
 
 
 Sebenarnya dengan [*R*](https://www.r-project.org/) saja cukup,
