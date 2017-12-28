@@ -3,7 +3,7 @@ layout: post
 title: 'Add video without plugin'
 date: 2017-12-28 19:30:00.000000000 +07:00
 type: post
-published: true
+published: false
 status: publish
 tags:
 - video
