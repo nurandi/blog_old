@@ -7,7 +7,6 @@ published: true
 status: publish
 tags:
 - video
-vimeoId: 199742225
 author: Nur Andi Setiabudi
 excerpt: Membuat peta dengan R dapat dilakukan dengan mudah menggunakan package leaflet.
   Leaflet memudahkan menghasilkan sebuah peta interaktif
