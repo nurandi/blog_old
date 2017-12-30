@@ -39,7 +39,7 @@ Meskipun online, kita tetap diawasi dengan cara _screen sharing_ dan menyalakan 
 
 ## Apa saja soalnya?
 
-CCA Data Analyst adalah _performance based exam_. Kita langsung membuat _script_ dan _query_ untuk menyelesaikan setiap permasalahan berdasarkan _requirement_ yang ditentukan. Sama sekali tidak berupa pertanyaan dengan jawaban pilihan ganda atau _essay_. 
+CCA Data Analyst adalah _performance based exam_. Kita langsung membuat _script_ dan _query_ untuk menyelesaikan setiap permasalahan berdasarkan _requirement_ yang ditentukan. Sama sekali tidak berupa pertanyaan dengan jawaban pilihan ganda atau _essay_. Meskipun namanya CCA Data Analyst, bukan _analytical skill_ (_statistics_ atau _machine learning_) yang diuji, tetapi lebih ke _technical skill_ bagaimana membuat _query_ untuk menghasilkan output yang diinginkan.  
 
 _Exam environment_ menggunakan Ubuntu yang sudah terinstal Cloudera di dalamnya. Selain itu beberapa aplikasi desktop seperti Sublime Text, Python dan Eclipse juga disediakan, tapi hanya Sublime yang saya gunakan. 
 
@@ -73,9 +73,14 @@ Latihan sudah maksimal dan segala sesuatunya sudah dipersiapkan, tapi kadang ada
 
 * _Time management_ sangat penting. Kita hanya punya waktu 120 menit untuk menyelesaikan 8-12 soal. Kita tidak harus mengerjakan secara berurutan, jadi kerjakan yang mudah dulu.
 
-* Pastikan setidaknya pernah punya pengalaman menggunakan Ubuntu dan juga Terminal-nya, termasuk _short-cut_ untuk _copy-paste_. Saya biasanya menggunakan Windows dengan Putty atau XShell, kemarin merasa sangat kerepotan saat akan _copy-paste_. 
+* Mulailah mencoba menggunakan Ubuntu dan juga Terminal-nya, termasuk _short-cut_ untuk _copy-paste_. Saya biasanya menggunakan Windows dengan Putty atau XShell, kemarin merasa sangat kerepotan saat akan _copy-paste_. 
 
-* Pastikan juga pernah membuka dokumentasi Cloudera, Hive, Sqoop, dan lain-lain. Ini akan sangat membantu ketika kita lupa nama fungsi atau kode tertentu. Saya sendiri hanya punya beberapa menit sebelum waktu berakhir untuk membuka dokumentasi. Dan itu tidak cukup.
+* Sebelum ujian, sesekali bukalah dokumentasi Cloudera, Hive, Sqoop, dan _tools_ lain yang relevan. Ini akan sangat membantu ketika kita lupa nama fungsi atau kode tertentu. Saya sendiri hanya punya beberapa menit sebelum waktu berakhir untuk membuka dokumentasi. Dan itu tidak cukup.
+
+* Saat ujian:
+  * Sebelum membukan soal/*problem*, sempatkan untuk membaca halaman paling awal. Di sana mungkin ada informasi penting yang diperlukan untuk mengerjakan soal, seperti _hostname, username_ dan juga _password_
+  * Baca teliti _instruction, data description_ dan juga _output requirements_ di setiap soal. Pastikan menjawab sesuai _requirements_ yang diminta
+  * Jika waktu masih tersedia, coba _review_ kembali jawaban-jawabannya. Dan sekali lagi, pastikan sesuai _requirements_ ya. 
 
 Oke. Semoga bermanfaat. Kalau ada yang ingin ditanyakan bisa melalui kolom komentar ya. Atau email ke `nurandi.mail[at]gmail.com`.
 
