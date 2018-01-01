@@ -21,6 +21,20 @@ share:
 ---
 Setelah beberapa kali _mau daftar, tapi gak jadi, mau daftar lagi tapi cuman wacana_, akhirnya kemarin (28/12), jam 9-11 pagi, saya benar-benar ambil sertifikasi [*Cloudera Certified Data Analyst (CCA159)*](https://www.cloudera.com/more/training/certification/cca-data-analyst.html). Sekitar 40 menit setelahnya, saya dapat email dari Cloudera yang menyatakan saya lulus. _**Alhamdulillahirabbil alamin**_. 
 
+Melalui email tersebut Cloudera tidak hanya menyampaikan bahwa saya lulus, tetapi juga keterangan untuk tiap-tiap soal: apakah benar atau salah. Jika salah, disebutkan juga alasannya. Diberitahukan juga bahwa saya akan mendapatkan sertifikat elektronik melalui email yang akan dikirimkan dalam waktu 2-3 hari kerja.
+
+{% include base_path %}
+
+{% capture fig_img %}
+![Nur Andi Setiabudi - Cloudera Certified CCA Data Analyst]({{ base_path }}/img/blog/pengalaman-cca-data-analyst/cca-data-analyst.png)
+{% endcapture %}
+
+<figure>
+{{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+<span class="caption">Yeay, sertifikat CCA Data Analyst, dikirimkan Cloudera dua hari setelah saya dinyatakan lulus. Vefifikasi: http://certification.cloudera.com/verify</span>
+</figure> 
+
+
 Di artikel ini saya coba *share* pengalaman seputar CCA Data Analyst yang saya ikuti kemarin itu. Mudah-mudahan bermanfaat.
 
 ## Mengapa mengambil sertifikasi?
