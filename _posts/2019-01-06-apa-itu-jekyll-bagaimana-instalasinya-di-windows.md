@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Apa Itu Jekyll dan Bagaimana Cara Instalasinya di Windows?'
-date: 2018-01-06 11:27:00.000000000 -05:00
+date: 2019-01-06 11:27:00.000000000 -05:00
 type: post
 published: true
 status: publish
