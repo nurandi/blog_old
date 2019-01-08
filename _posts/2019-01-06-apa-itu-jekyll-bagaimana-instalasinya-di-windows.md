@@ -175,7 +175,7 @@ Setelah Jekyll sukses diinstal, saatnya kita membuat blog. Caranya sangat mudah.
 
 	![New jekyll Folder](/img/blog/2019/apa-jekyll-install/new-jekyll2.png)
 	
-	Perintah `jekyll new myblog` menginisiasi blog baru dengan *template default* yaitu [minima](https://github.com/jekyll/minima). Jika ingin menggunakan *template* lain, bisa *download/fork* dari [Github](https://github.com/topics/jekyll-theme) atau download dari sumber lain seperti [ini](https://jekyllthemes.io/free) dan [ini](http://themes.jekyllrc.org/). Ganti semua file dan folder di dalam folder **myblog** dengan *template* yang diinginkan.
+	Perintah `jekyll new myblog` menginisiasi blog baru dengan *template default* yaitu [minima](https://github.com/jekyll/minima). Jika ingin menggunakan *template* lain, bisa *download/fork* dari [Github](https://github.com/topics/jekyll-theme) atau *download* dari sumber lain seperti [ini](https://jekyllthemes.io/free) dan [ini](http://themes.jekyllrc.org/). **Ganti** semua file dan folder di dalam folder **myblog** dengan *template* yang diinginkan.
 	
 3. Masuk ke folder **myblog**
 
