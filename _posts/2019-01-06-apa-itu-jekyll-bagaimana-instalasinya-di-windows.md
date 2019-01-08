@@ -45,7 +45,7 @@ Tidak ada yang sempurna. Jekyll pun punya kelemahan dibandingkan Wordpress, di a
 
 1. Tidak bisa _update_ blog secara _live_. Perubahan dilakukan secara "lokal", baru kemudian blog kita _generate_ ulang.
 2. Menulis artikel pada Jekyll artinya menulis sebuah file teks. _Formating_ dilakukan dengan menggunakan "simbol-simbol" khusus. Bagi yang tidak terbiasa tentu akan terasa merepotkan. Bandingkan dengan Wordpress, menulis artikel dan format-nya (teks tebal dan miring, ukuran huruf, menyisipkan gambar) semudah membuat tulisan dengan Microsoft Word: apa yang kita lihat itulah yang akan kita dapat _(what you see is what you get - WYSIWYG)_. 
-3. Tidak seperti *template* Wordpress yang dapat diganti dengan "sekali" klik, mengubah *template* Jekyll relatif memerlukan "upaya ekstra". 
+3. Tidak seperti *template* Wordpress yang dapat diganti dengan "sekali" klik, mengubah *template* Jekyll relatif memerlukan "upaya ekstra", *tricky* alias rumit :(
 
 # Instalasi Jekyll pada Windows 10
 
@@ -174,6 +174,8 @@ Setelah Jekyll sukses diinstal, saatnya kita membuat blog. Caranya sangat mudah.
 	Silakan periksa folder **D:\Personal\Blog**, akan ada folder baru dengan nama **myblog**. Folder inilah yang berisi file-file statis yang diperluka oleh Jekyll untuk membentuk blog.
 
 	![New jekyll Folder](/img/blog/2019/apa-jekyll-install/new-jekyll2.png)
+	
+	Perintah `jekyll new myblog` menginisiasi blog baru dengan *template default* yaitu [minima](https://github.com/jekyll/minima). Jika ingin menggunakan *template* lain, bisa *download/fork* dari [Github](https://github.com/topics/jekyll-theme) atau download dari sumber lain seperti [ini](https://jekyllthemes.io/free) dan [ini](http://themes.jekyllrc.org/). Ganti semua file dan folder di dalam folder **myblog** dengan *template* yang diinginkan.
 	
 3. Masuk ke folder **myblog**
 
