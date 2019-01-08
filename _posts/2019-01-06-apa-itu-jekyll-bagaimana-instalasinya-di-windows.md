@@ -54,6 +54,7 @@ Tidak ada yang sempurna. Jekyll pun punya kelemahan dibandingkan Wordpress, di a
 
 1. Tidak bisa _update_ blog secara _live_. Perubahan dilakukan secara "lokal", baru kemudian blog kita _generate_ ulang.
 2. Menulis artikel pada Jekyll artinya menulis sebuah file teks. _Formating_ dilakukan dengan menggunakan "simbol-simbol" khusus. Bagi yang tidak terbiasa tentu akan terasa merepotkan. Bandingkan dengan Wordpress, menulis artikel dan format-nya (teks tebal dan miring, ukuran huruf, menyisipkan gambar) semudah membuat tulisan dengan Microsoft Word: apa yang kita lihat itulah yang akan kita dapat _(what you see is what you get - WYSIWYG)_. 
+3. Tidak seperti *template* Wordpress yang dapat diganti dengan "sekali" klik, mengubah *template* Jekyll relatif memerlukan "upaya ekstra". 
 
 # Instalasi Jekyll pada Windows 10
 
