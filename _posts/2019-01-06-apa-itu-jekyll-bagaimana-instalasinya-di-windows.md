@@ -10,6 +10,7 @@ tags:
   - jekyll
 author: Nur Andi Setiabudi
 excerpt: Jekyll, sesuai tagline "a simple, blog-aware, static site generator" adalah  software untuk membuat  static website. Untuk menghasilkan sebuah blog, Jekyll hanya membutuhkan template, file-file artikel yang ditulis dengan format Markdown dan sebuah file konfigurasi. Kemudian hasilnya kita upload ke server. Itulah blog kita. Sesederhana itu.
+share-img: /img/blog/2019/apa-jekyll-install/logo-jekyll.jpg
 share:
   - facebook
   - twitter
@@ -22,17 +23,7 @@ Ketika saya "berniat" menulis kembali beberapa hari yang lalu, saya baru menyada
 
 Sekalian install Jekyll, saya tuliskan saja tahapannya. Lumayan, dapat satu artikel kan. Selain sebagai catatan saya, mudah-mudahan bisa bermanfaat ketika ada yang membutuhkan. 
 
-{% include base_path %}
-
-{% capture fig_img %}
-![Logo Jekyll]({{ base_path }}/img/blog/2019/apa-jekyll-install/logo-jekyll.jpg)
-{% endcapture %}
-
-<figure>
-{{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-<span class="caption">Logo Jekyll</span>
-</figure> 
-
+{% include image url="/img/blog/2019/apa-jekyll-install/logo-jekyll.jpg" alt="Logo Jekyll" caption="Logo Jekyll" %}
 
 # Apa itu Jekyll?
 
