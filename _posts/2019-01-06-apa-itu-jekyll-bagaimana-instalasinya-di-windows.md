@@ -209,7 +209,7 @@ Silakan *refresh* browser. Halaman muka blog akan berubah menjadi seperti ini
 
 ![Edit config](/img/blog/2019/apa-jekyll-install/edit-config-new.png)
 
-Selain mengubah *title*, *url* dan *description*, banyak pengaturan yang bisa dilakukan melalui file *_config.xml*, misalnya menampilkan *excerpt*, mengaktifkan komentar dengan [Disqus](https://disqus.com/) dan lain-lain. Selengkapnya bisa dipelajari di laman dokumentasi [jekyll/minima](https://github.com/jekyll/minima).
+Selain mengubah *title*, *url* dan *description*, banyak pengaturan yang bisa dilakukan melalui file *_config.xml*, misalnya menampilkan menu, mengaktifkan komentar dengan [Disqus](https://disqus.com/) dan lain-lain. Selengkapnya bisa dipelajari di laman dokumentasi *template* yang digunakan.
 
 ---
 
