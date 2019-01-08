@@ -201,7 +201,21 @@ Setelah Jekyll sukses diinstal, saatnya kita membuat blog. Caranya sangat mudah.
 
 	![New Blog](/img/blog/2019/apa-jekyll-install/new-jekyll4.png)
 
-Selamat!
+Selamat, blog statis pertama telah selesai dibuat dengan menggunakan Jekyll. Selanjutnya, kita perlu menyunting file konfigurasi **_config.yml** untuk mengubah judul, *link,* maupun catatan kaki *(footer).* Buka file **_config.yml** dengan *text editor* seperti Notepad. 
+
+![Edit config](/img/blog/2019/apa-jekyll-install/edit-config.png)
+	
+Perubahan file konfigurasi tidak langsung dieksekusi oleh. Silakan kembali ke **Bash on Ubuntu on Windows**, lalu *stop* Jekyll *service* dengan cara menekan tombol *(keyboard)* **Ctrl+C**, lalu jalankan kembali dengan perintah
+
+```
+bundle exec jekyll serve
+```
+
+Silakan *refresh* browser. Halaman muka blog akan berubah menjadi seperti ini
+
+![Edit config](/img/blog/2019/apa-jekyll-install/edit-config-new.png)
+
+Selain mengubah *title*, *url* dan *description*, banyak pengaturan yang bisa dilakukan melalui file *_config.xml*, misalnya menampilkan *excerpt*, mengaktifkan komentar dengan [Disqus](https://disqus.com/) dan lain-lain. Selengkapnya bisa dipelajari di laman dokumentasi [jekyll/minima](https://github.com/jekyll/minima).
 
 ---
 
