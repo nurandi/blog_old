@@ -14,7 +14,7 @@ tags:
   - certification
   - cca
 author: Nur Andi Setiabudi
-share-img:/img/blog/pengalaman-cca-data-analyst/cca-data-analyst.png
+share-img: /img/blog/pengalaman-cca-data-analyst/cca-data-analyst.png
 share:
   - facebook
   - twitter
