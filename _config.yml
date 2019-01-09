@@ -34,6 +34,7 @@ title-img: "/img/avatar-icon.png"
 author:
   name: Nur Andi Setiabudi
   email: "nurandi@gmail.com"
+  instagram: nurandi
   facebook: nsetiabudi
   github: nurandi
   twitter: nurandi
@@ -43,6 +44,7 @@ author:
 # Social links to show in the footer
 footer-links-active:
   rss: true
+  instagram: true
   facebook: true
   email: true
   twitter: true
