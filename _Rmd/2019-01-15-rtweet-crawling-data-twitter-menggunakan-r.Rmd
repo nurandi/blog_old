@@ -101,10 +101,10 @@ token <- create_token(
 
 ```{r eval=TRUE, include=FALSE}
 token <- create_token(
-  consumer_key = "Y53NWk4gFgjuI6hx05zwaGh0Q",
-  consumer_secret = "LSfd9CPPWEBJhYS4Z7rDVGZt3y1dkVehTnSe7wsM0NKVWBDLoV",
-  access_token = "59108937-SVL6cu6x7wR70mUAWc1BCc7gJIOdfugps6iFgU6GO",
-  access_secret = "5ZOkQkUqEsfnfsy31GSLIEyaiDLB0UC2rw8EP1gNaLTc7")
+  consumer_key = "XXXXXk4gFgjuI6hx05zwaGh0Q",
+  consumer_secret = "XXXXXCPPWEBJhYS4Z7rDVGZt3y1dkVehTnSe7wsM0NKVWBDLoV",
+  access_token = "XXXXX937-XXXXXu6x7wR70mUAWc1BCc7gJIOdfugps6iFgU6GO",
+  access_secret = "XXXXXkUqEsfnfsy31GSLIEyaiDLB0UC2rw8EP1gNaLTc7")
 ```
 
 Jika tidak muncul *error*, berarti proses otentikasi sukses.
