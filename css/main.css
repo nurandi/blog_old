@@ -343,6 +343,7 @@ footer .theme-by {
 }
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5; /* Line space 1.5 */
 }
 .post-entry-container {
   display: inline-block;
