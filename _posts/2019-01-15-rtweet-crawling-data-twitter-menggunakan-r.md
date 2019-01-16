@@ -105,8 +105,6 @@ token <- create_token(
   access_secret = "XXXXXkUqEsfnfsy31GSLIEyaiDLB0UC2rw8EP1gNaLTc7")
 {% endhighlight %}
 
-
-
 Jika tidak muncul *error*, berarti proses otentikasi sukses.
 
 
@@ -156,20 +154,20 @@ tweet[,c("created_at", "screen_name", "text")]
 
 
 {% highlight text %}
-## # A tibble: 991 x 3
+## # A tibble: 994 x 3
 ##    created_at          screen_name   text                                  
 ##    <dttm>              <chr>         <chr>                                 
-##  1 2019-01-16 03:11:11 polsektabote~ "Salam Tri Brata Mitra Humas\n\nPerso~
-##  2 2019-01-15 07:36:23 polsektabote~ "Salam Tri Brata Mitra Humas\n\nPerso~
-##  3 2019-01-14 07:40:59 polsektabote~ "Salam Tri Brata Mitra Humas\n\nPerso~
-##  4 2019-01-14 08:12:46 polsektabote~ "Salam Tri Brata Mitra Humas\n\nPerso~
-##  5 2019-01-13 08:38:32 polsektabote~ "Salam Tri Brata Mitra Humas\n\nPerso~
-##  6 2019-01-13 08:22:38 polsektabote~ "Salam Tri Brata Mitra Humas\n\nPerso~
-##  7 2019-01-14 07:56:32 polsektabote~ "Salam Tri Brata Mitra Humas\n\nPerso~
-##  8 2019-01-16 03:06:32 Antara_Jabar  BPN Kota Bogor target PTSL 65.000 bid~
-##  9 2019-01-16 02:56:56 KmaKec        "Bismillahirraahmanirrahiim.\nSaya be~
-## 10 2019-01-16 02:58:25 KmaKec        "Saya disambut KH Muhammad Mustofa Ab~
-## # ... with 981 more rows
+##  1 2019-01-16 12:35:57 hasnahahahah~ @CommuterLine kereta terakhir dr jkt ~
+##  2 2019-01-16 12:35:20 iffa_retno69  "#dadakan #padangsidempuan #sidikalan~
+##  3 2019-01-13 19:09:55 iffa_retno69  "#padangsidempuan #sidikalang #tebing~
+##  4 2019-01-16 12:11:59 terrotouli    Kekurangan dari pembangunan infrastru~
+##  5 2019-01-16 12:10:53 aininur56     5. Sekretaris PCNU Kota Bogor ini men~
+##  6 2019-01-16 12:07:08 CommuterLine  @imbecillic Selamat malam, untuk pemb~
+##  7 2019-01-13 14:36:10 CommuterLine  #InfoLintas : KA 1460 (Jakarta Kota-B~
+##  8 2019-01-13 12:46:36 CommuterLine  @itsmeanggii Cikarang-Jakarta Kota te~
+##  9 2019-01-15 13:34:21 CommuterLine  @ditakswn Selamat malam. Kami informa~
+## 10 2019-01-15 16:41:12 CommuterLine  @CahyoWarih Selamat malam. Dapat kami~
+## # ... with 984 more rows
 {% endhighlight %}
 
 *Keyword/query* dapat berupa satu atau beberapa kata, namun hindari *keyword* yang kompleks. Menurut Twitter, query sebaiknya tidak lebih dari 10 kata. Berikut contoh cara penulisan *keyword*:
@@ -209,16 +207,16 @@ timeline[,c("created_at", "source", "text")]
 ## # A tibble: 100 x 3
 ##    created_at          source        text                                  
 ##    <dttm>              <chr>         <chr>                                 
-##  1 2019-01-07 04:51:17 IFTTT         New blog article: Apa Itu Jekyll dan ~
-##  2 2018-12-13 23:53:31 Twitter for ~ "Semoga kita bukan termasuk orang yan~
-##  3 2018-09-18 12:47:30 Twitter for ~ aku kalo ke ATM lebih takut keliatan ~
-##  4 2018-08-17 01:37:24 Twitter Web ~ "@Telkomsel Hi, saya berlangganan pak~
-##  5 2018-07-05 01:55:25 Twitter for ~ @IndonesiaGaruda halo, GA-824 CGK-SIN~
-##  6 2018-06-02 16:51:35 Twitter for ~ "English: i know i supposed to meet y~
-##  7 2018-04-23 04:54:58 Twitter for ~ @imigrasi_jakbar Min, saya sudah daft~
-##  8 2018-04-04 08:37:53 Twitter for ~ @TokopediaCare verifikasi pembayatan ~
-##  9 2018-03-13 04:42:15 Twitter for ~ @BPJSTKinfo Terima kasih infonya. BPJ~
-## 10 2018-03-13 03:34:42 Twitter Web ~ "@BPJSTKinfo saat ini saya punya 2 ka~
+##  1 2019-01-16 03:23:37 Twitter Web ~ https://t.co/b5KGxX56L5               
+##  2 2019-01-07 04:51:17 IFTTT         New blog article: Apa Itu Jekyll dan ~
+##  3 2018-12-13 23:53:31 Twitter for ~ "Semoga kita bukan termasuk orang yan~
+##  4 2018-09-18 12:47:30 Twitter for ~ aku kalo ke ATM lebih takut keliatan ~
+##  5 2018-08-17 01:37:24 Twitter Web ~ "@Telkomsel Hi, saya berlangganan pak~
+##  6 2018-07-05 01:55:25 Twitter for ~ @IndonesiaGaruda halo, GA-824 CGK-SIN~
+##  7 2018-06-02 16:51:35 Twitter for ~ "English: i know i supposed to meet y~
+##  8 2018-04-23 04:54:58 Twitter for ~ @imigrasi_jakbar Min, saya sudah daft~
+##  9 2018-04-04 08:37:53 Twitter for ~ @TokopediaCare verifikasi pembayatan ~
+## 10 2018-03-13 04:42:15 Twitter for ~ @BPJSTKinfo Terima kasih infonya. BPJ~
 ## # ... with 90 more rows
 {% endhighlight %}
 
@@ -248,7 +246,7 @@ user[,c("created_at", "screen_name", "name", "location", "description")]
 ## # A tibble: 1 x 5
 ##   created_at          screen_name name        location     description     
 ##   <dttm>              <chr>       <chr>       <chr>        <chr>           
-## 1 2019-01-07 04:51:17 nurandi     Nur Andi S~ Jakarta/Bog~ Aspiring Data S~
+## 1 2019-01-16 03:23:37 nurandi     Nur Andi S~ Jakarta/Bog~ Aspiring Data S~
 {% endhighlight %}
 
 Untuk *lookup* beberapa *user(s)*, input harus berupa *vector*. Misal:
@@ -269,8 +267,8 @@ users[,c("created_at", "screen_name", "name", "location", "description")]
 ## # A tibble: 4 x 5
 ##   created_at          screen_name name     location   description          
 ##   <dttm>              <chr>       <chr>    <chr>      <chr>                
-## 1 2019-01-07 04:51:17 nurandi     Nur And~ Jakarta/B~ Aspiring Data Scient~
-## 2 2019-01-15 01:51:46 jokowi      Joko Wi~ Jakarta    "Akun Twitter resmi ~
+## 1 2019-01-16 03:23:37 nurandi     Nur And~ Jakarta/B~ Aspiring Data Scient~
+## 2 2019-01-16 10:10:08 jokowi      Joko Wi~ Jakarta    "Akun Twitter resmi ~
 ## 3 2019-01-15 17:23:00 BillGates   Bill Ga~ Seattle, ~ Sharing things I'm l~
 ## 4 2019-01-09 08:16:38 MoSalah     Mohamed~ Liverpool~ Footballer for Liver~
 {% endhighlight %}
@@ -357,19 +355,19 @@ detail_followings[,c("created_at", "screen_name", "location", "description")]
 ##    created_at          screen_name  location     description               
 ##    <dttm>              <chr>        <chr>        <chr>                     
 ##  1 2019-01-07 20:13:53 perrystephe~ Sydney       I tweet (rarely) about #r~
-##  2 2019-01-16 02:53:55 kitabisacom  Indonesia    Situs galang dana dan don~
+##  2 2019-01-16 12:03:30 kitabisacom  Indonesia    Situs galang dana dan don~
 ##  3 2019-01-11 20:56:56 KJRIToronto  Toronto, Ka~ Akun twitter Konsulat Jen~
 ##  4 2018-10-24 15:30:47 kitchenerma~ Kitchener, ~ 1017 Victoria St N. (519)~
 ##  5 2019-01-16 01:23:53 imigrasi_ja~ Kota Tua, J~ "Kantor Imigrasi Kelas I ~
-##  6 2019-01-16 02:49:46 flerlagekr   Williamspor~ Tableau Zen Master <U+25CF> Anal~
-##  7 2019-01-16 03:05:47 INABadminton Cipayung, J~ "Akun Twitter Resmi Humas~
+##  6 2019-01-16 12:19:11 flerlagekr   Williamspor~ Tableau Zen Master <U+25CF> Anal~
+##  7 2019-01-16 12:52:46 INABadminton Cipayung, J~ "Akun Twitter Resmi Humas~
 ##  8 2019-01-15 20:20:40 goodfellow_~ San Francis~ Google Brain research sci~
 ##  9 2019-01-16 01:42:39 fchollet     Mountain Vi~ Deep learning @google. Cr~
 ## 10 2019-01-13 22:19:13 math_rachel  San Francis~ co-founder https://t.co/Z~
 ## # ... with 315 more rows
 {% endhighlight %}
 
-Fungsi-fungsi yang kita bahas tadi hanya sebagian dari fitur yang tersedia pada *package* **rtweet**. Juga masih banyak parameter yang bisa ditambahkan agar pencarian yang kita lakukan sesuai kebutuhan. Untuk mengetahui fungsi-fungsi tersebut secara detail termasuk parameter yang bisa digunakan, ketik ? diikuti nama fungsi. Misal `?search_tweets`. Atau, bisa juga pelajari referensi pada laman [rtweet.info](https://rtweet.info/reference/flatten.html). 
+Fungsi-fungsi yang kita bahas tadi hanya sebagian dari fitur yang tersedia pada *package* **rtweet**. Juga masih banyak parameter yang bisa ditambahkan agar pencarian yang kita lakukan sesuai kebutuhan. Untuk mengetahui fungsi-fungsi tersebut secara detail termasuk parameter yang bisa digunakan, ketik `?` diikuti nama fungsi. Misal `?search_tweets`. Atau, bisa juga pelajari referensi pada laman [rtweet.info](https://rtweet.info/reference/flatten.html). 
 
 Selamat menambang data :)
 
