@@ -99,14 +99,6 @@ token <- create_token(
   access_secret = "XXXXXkUqEsfnfsy31GSLIEyaiDLB0UC2rw8EP1gNaLTc7")
 ```
 
-```{r eval=TRUE, include=FALSE}
-token <- create_token(
-  consumer_key = "XXXXXk4gFgjuI6hx05zwaGh0Q",
-  consumer_secret = "XXXXXCPPWEBJhYS4Z7rDVGZt3y1dkVehTnSe7wsM0NKVWBDLoV",
-  access_token = "XXXXX937-XXXXXu6x7wR70mUAWc1BCc7gJIOdfugps6iFgU6GO",
-  access_secret = "XXXXXkUqEsfnfsy31GSLIEyaiDLB0UC2rw8EP1gNaLTc7")
-```
-
 Jika tidak muncul *error*, berarti proses otentikasi sukses.
 
 
