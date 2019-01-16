@@ -202,6 +202,10 @@ bisa digunakan, ketik `?` diikuti nama fungsi pada *R console*.
 
 ------------------------------------------------------------------------
 
+**UPDATE** (16 Jan 2019): Pada pertengahan 2016, [Jeff Gentry](https://github.com/geoffjentry/twitteR), sang pengembang, menghentikan pengembangan dan *update/maintenance* *package* **twitteR**. Meskipun masih bisa digunakan (setidaknya sampai saat ini), Mr. Jeff merekomendasikan untuk beralih menggunakan *package* lain yang tidak kalah kerennya, yaitu [**rtweet**](https://cran.r-project.org/web/packages/rtweet/index.html). Bagaimana menggunakan *package* **rtweet** untuk *crawling* data Twitter sudah saya jabarkan pada artikel [**rtweet: Crawling Data Twitter Menggunakan R**](https://www.nurandi.id/blog/rtweet-crawling-data-twitter-menggunakan-r/).
+
+------------------------------------------------------------------------
+
 Selamat, kita sudah berhasil mendapatkan tweet yang berisi kata-kata
 tertentu, informasi/profil akun twitter dan timeline/status. Mudah
 bukan?
@@ -212,3 +216,5 @@ detail seperti kapan tweet tersebut di *posting*, ada berapa jumlah
 kita simpan hasil *crawling* tersebut ke file .csv misalnya? Tentu saja
 bisa. Yang harus kita lakukan adalah melakukan sedikit manipulasi data.
 Silakan simak artikel [berikut](https://www.nurandi.id/blog/twitter-mengolah-data-twitter-hasil-crawling/) :)
+
+
