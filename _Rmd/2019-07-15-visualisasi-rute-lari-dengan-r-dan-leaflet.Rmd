@@ -1,0 +1,24 @@
+---
+title: 'Visualisasi Rute Lari dengan R dan Leaflet'
+author: "Nur Andi Setiabudi"
+date: "July 5, 2019"
+layout: post
+published: no
+share-img: /img/blog/2019/
+tags:
+- r
+- leaflet
+- strava
+- rute
+- mapping
+- visualisasi
+- lari
+- running
+type: post
+excerpt: 
+---
+
+
+
+
+
