@@ -72,7 +72,7 @@ Sebenarnya cuma ada dua soal yang secara eksplisit diminta menggunakan Hive, sis
 
 Sebagai gambaran bagaimana contoh soalnya, silakan simak video dari Clodera berikut.
 
-{% include vimeoPlayer.html id="199747760" %}
+{% include vimeo.html id="199747760" %}
 
 Ya, memang sesederhana itu. Saya sendiri berhasil menyelesaikan delapan soal dengan benar (Skor minimum untuk lulus adalah 70%). Satu yang tidak bisa saya selesaikan adalah membuat table dari data Avro. Sama sekali tidak punya pengalaman dan tidak mempelajari ini sebelumnya. Sebenarnya saya sudah berusaha mencari di dokumentasi, sayangnya waktu tidak cukup.
 
