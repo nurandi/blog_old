@@ -15,7 +15,7 @@ tags:
 - lari
 - running
 type: post
-excerpt: Membuat peta interaktif dapat dilakukukan dengan mudah menggunakan R dan leaflet. Artikel ini menjelaskan tahapan membuat visualisasi rute lari dengan R dan leaflet.
+excerpt: Membuat peta interaktif dapat dilakukukan dengan mudah menggunakan R dan leaflet. Artikel ini menjelaskan tahapan membuat visualisasi rute lari yang direkam menggunakan perangkat atau aplikasi GPS seperti Garmin, Strava atau aplikasi sport tracker lainnya, dengan menggununakan R dan package leaflet.
 ---
 
 Beberapa waktu lalu (tepatnya tiga tahun lalu :D) saya menulis artikel tentang bagaimana [memetakan twit dengan menggunakan Leaflet](https://www.nurandi.id/blog/membuat-peta-dengan-r-dan-leaflet/). Kali ini, saya akan memetakan rute lari yang direkam  perangkat GPS (jam tangan ber-GPS, *smartphone*, dan lain-lain) dengan memanfaatkan *tools* yang sama, yaitu **R** dan dan *package* **leaflet**. Jika belum familiar dengan Leaflet, ada baiknya membaca [artikel ini](https://rstudio.github.io/leaflet/). *Bocoran* singkatnya, Leaflet adalah salah satu *library* JavaScript paling populer untuk membuat peta interaktif (bukan peta statis). *Package* **leaflet** dikembangkan oleh RStudio untuk memudahkan pembuatan peta melalui R, tanpa harus menulis kode JavaScript. 
