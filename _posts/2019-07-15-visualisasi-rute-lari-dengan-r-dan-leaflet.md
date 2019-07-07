@@ -384,7 +384,7 @@ m <- m %>%
              group = "Start/Finish") 
 {% endhighlight %}
 
-{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511101_680bd4802dbf4530963053478447be6a.html" %}
+{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511101_680bd4802dbf4530963053478447be6a.html" %}
 
 Cara yang sama bisa kita lakukan untuk menambahkan *marker* titik *finish*
 
@@ -403,7 +403,7 @@ m <- m %>%
              group = "Start/Finish")
 {% endhighlight %}
 
-{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511102_c2ab7ffbee1f49d4b70fa978ffb473d7.html" %}
+{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511102_c2ab7ffbee1f49d4b70fa978ffb473d7.html" %}
 
 
 **Langkah #6**. Membuat *markers* untuk foto pada titik koordinatnya. Caranya mirip dengan Langkah #5. Yang membedakan, jika sebelumnya *pop up* berupa teks **Start** dan **Finish** maka di sini kita gunakan HTML untuk menampilkan foto.
@@ -439,7 +439,7 @@ m <- m %>%
              group ='Pictures')
 {% endhighlight %}
 
-{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511103_cca6b87edcd0408c8791cf6b00a2ac59.html" %}
+{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511103_cca6b87edcd0408c8791cf6b00a2ac59.html" %}
 
 Jika salah satu *marker* kita klik, foto akan muncul pada *pop up*.
 
@@ -459,7 +459,7 @@ m <- m %>%
                      options = layersControlOptions(collapsed = FALSE)) 
 {% endhighlight %}
 
-{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511104_41e7f5e5969041479a616a4f00598af7.html" %}
+{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511104_41e7f5e5969041479a616a4f00598af7.html" %}
 
 **Selesai!**
 
