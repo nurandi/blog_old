@@ -53,24 +53,27 @@ Ada tiga *packages* yang akan digunakan, yaitu:
 
 Jika *package(s)* tersebut belum terinstal pada R, silakan instal terlebih dahulu dengan perintah
 
-```{r eval=FALSE}
+
+{% highlight r %}
 install.packages(c("plotKLM", "exifr", "leaflet"))
-```
+{% endhighlight %}
 
 Khusus **leaflet**, bisa juga instal versi *development*-nya dari [Github](https://github.com/rstudio/leaflet).
 
-```{r eval=FALSE}
+
+{% highlight r %}
 if (!require("devtools")) install.packages("devtools")
 devtools::install_github("rstudio/leaflet")
-```
+{% endhighlight %}
 
 Setelah itu, *load* semua *packages*.
 
-```{r}
+
+{% highlight r %}
 library(plotKML)
 library(exifr)
 library(leaflet)
-```
+{% endhighlight %}
 
 # Let's map your running route!
 
@@ -80,25 +83,55 @@ Data sudah tersedia. *Package(s)* yang diperlukan sudah terinstal. *Let's map yo
 
 File GPX dapat dibaca menggunakan fungsi `readGPX` yang tersedia pada *package* **plotKML**. 
 
-```{r include=FALSE}
-route <- readGPX("/Users/widyaningsih/Documents/3_Andi/R/strava-route/Light_Trail_at_Laurel_Creek.gpx")
-```
 
-```{r eval=FALSE}
+
+
+{% highlight r %}
 gpx_file <- "Light_Trail_at_Laurel_Creek.gpx"
 route <- readGPX(gpx_file)
-```
+{% endhighlight %}
 
-```{r}
+
+{% highlight r %}
 str(route)
-```
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## List of 5
+##  $ metadata : NULL
+##  $ bounds   : NULL
+##  $ waypoints: NULL
+##  $ tracks   :List of 1
+##   ..$ :List of 1
+##   .. ..$ Light Trail at Laurel Creek 🏞️:'data.frame':	7995 obs. of  5 variables:
+##   .. .. ..$ lon       : num [1:7995] -80.5 -80.5 -80.5 -80.5 -80.5 ...
+##   .. .. ..$ lat       : num [1:7995] 43.5 43.5 43.5 43.5 43.5 ...
+##   .. .. ..$ ele       : chr [1:7995] "335.3" "335.3" "335.2" "335.1" ...
+##   .. .. ..$ time      : chr [1:7995] "2019-06-23T13:08:04Z" "2019-06-23T13:08:05Z" "2019-06-23T13:08:06Z" "2019-06-23T13:08:07Z" ...
+##   .. .. ..$ extensions: chr [1:7995] "14258" "1420" "1420" "1410" ...
+##  $ routes   : NULL
+{% endhighlight %}
 
 Objek **route** merupakan *list* dengan lima elemen. Yang akan kita gunakan adalah elemen data-frame pada element **tracks**.
 
-```{r}
+
+{% highlight r %}
 route <- route$tracks[[1]][[1]]
 str(route)
-```
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 'data.frame':	7995 obs. of  5 variables:
+##  $ lon       : num  -80.5 -80.5 -80.5 -80.5 -80.5 ...
+##  $ lat       : num  43.5 43.5 43.5 43.5 43.5 ...
+##  $ ele       : chr  "335.3" "335.3" "335.2" "335.1" ...
+##  $ time      : chr  "2019-06-23T13:08:04Z" "2019-06-23T13:08:05Z" "2019-06-23T13:08:06Z" "2019-06-23T13:08:07Z" ...
+##  $ extensions: chr  "14258" "1420" "1420" "1410" ...
+{% endhighlight %}
 
 Sekarang objek **route** berupa *data-frame* dengan kolom-kolom: *long (longitude)*, *lat (latitude)*, *ele (elevation)*, *time* dan *extensions*.
 
@@ -106,36 +139,51 @@ Sekarang objek **route** berupa *data-frame* dengan kolom-kolom: *long (longitud
 
 *Exif* atau medatada bisa dibaca dengan fungsi `read_exif` pada *package* **exifr**. Saya asumsikan file-file foto berapa pada folder **img** di *working directory*.
 
-```{r eval=FALSE}
+
+{% highlight r %}
 picture_files <- list.files("img", full.names = TRUE)
 
 picture_point <- read_exif(picture_files, 
                           tags = c("FileName", "GPSLatitude", "GPSLongitude"), 
                           quiet = TRUE)
-```
+{% endhighlight %}
 
-```{r echo=FALSE}
-picture_files <- list.files("/Users/widyaningsih/Documents/3_Andi/R/strava-route/img", full.names = TRUE)
 
-picture_point <- read_exif(picture_files, 
-                          tags = c("FileName", "GPSLatitude", "GPSLongitude"), 
-                          quiet = TRUE)
-
-picture_point$SourceFile <- gsub("widyaningsih.+\\/", ".../", picture_point$SourceFile)
-```
 
 Parameter `tag` berguna untuk memilih *tag* atau informasi apa saja yang akan diambil. Jika ingin mengambil semua informasi yang tersedia, hilangkan parameter tersebut.
 
-```{r}
+
+{% highlight r %}
 str(picture_point)
-```
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Classes 'tbl_df', 'tbl' and 'data.frame':	13 obs. of  4 variables:
+##  $ SourceFile  : chr  "/Users/.../finish.png" "/Users/.../IMG_20190623_091723989_HDR~2.jpg" "/Users/.../IMG_20190623_095219047_HDR~2.jpg" "/Users/.../IMG_20190623_101644766~2.jpg" ...
+##  $ FileName    : chr  "finish.png" "IMG_20190623_091723989_HDR~2.jpg" "IMG_20190623_095219047_HDR~2.jpg" "IMG_20190623_101644766~2.jpg" ...
+##  $ GPSLatitude : num  NA 43.5 43.5 43.5 43.5 ...
+##  $ GPSLongitude: num  NA -80.6 -80.6 -80.6 -80.6 ...
+{% endhighlight %}
 
 Beberapa file tanpa titik koordinat (GPSLatitude dan GPSLongitude `NA`). Untuk memilih **hanya** foto-foto yang memuat informasi koordinat, jalankan perintah berikut:
 
-```{r}
+
+{% highlight r %}
 picture_point <- picture_point[!is.na(picture_point$GPSLatitude), ]
 str(picture_point)
-```
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Classes 'tbl_df', 'tbl' and 'data.frame':	10 obs. of  4 variables:
+##  $ SourceFile  : chr  "/Users/.../IMG_20190623_091723989_HDR~2.jpg" "/Users/.../IMG_20190623_095219047_HDR~2.jpg" "/Users/.../IMG_20190623_101644766~2.jpg" "/Users/.../IMG_20190623_102230650~2.jpg" ...
+##  $ FileName    : chr  "IMG_20190623_091723989_HDR~2.jpg" "IMG_20190623_095219047_HDR~2.jpg" "IMG_20190623_101644766~2.jpg" "IMG_20190623_102230650~2.jpg" ...
+##  $ GPSLatitude : num  43.5 43.5 43.5 43.5 43.5 ...
+##  $ GPSLongitude: num  -80.6 -80.6 -80.6 -80.6 -80.6 ...
+{% endhighlight %}
 
 ## Membuat peta!
 
@@ -143,55 +191,63 @@ Saatnye manampilkan rute lari beserta foto dalam peta menggunakan **leaflet**. B
 
 **Langkah #1**. Proses membuat peta dengan **leaflet** diinsiasi dengan fungsi `leaflet`.  Dengan menjalankan fungsi ini, kita sedang menyiapkan sebuah "leyer" kosong yang di atasnya akan kita "tumpuk" layer-layer, seperti peta dasar *(base map)*, *polyline*, *polygon*, *marker*, dan lain-lain.  
 
-```{r}
+
+{% highlight r %}
 m <- leaflet()
-```
+{% endhighlight %}
 
 **Langkah #2**. Tambahkan peta dasar *(basemap)* pada layer kosong **m** dengan fungsi `addTiles`. Secara *default*, peta dasar yang digunakan adalah [OpenStreetMap](https://www.openstreetmap.org/).  
 
-```{r}
+
+{% highlight r %}
 m <- m %>% 
     addTiles(layerId = "Road",
          group = "Road")
-```
+{% endhighlight %}
 
 Meskipun opsional, sangat disarankan untuk menggunakan parameter `layerId` dan `group`. `layerId` berfungsi untuk menandai sebuah layer atau objek pada peta. Satu atau beberapa layer bisa dikelompokkan dalam sebuah `group`. Salah satu kegunaan dari `layerId` maupun `group` adalah memudahkan kita dalam modifikas sebuah layer atau grup layer. Sebagai contoh untuk menghapus layer *basemap*:
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m %>% removeTiles("Road")
-```
+{% endhighlight %}
 
 Operator `%>%` diadopsi dari *package* [*magrittr*](https://cran.r-project.org/web/packages/magrittr/index.html), bertindak sebagai *forward pipe operator*.
 
 Perintah 
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- addTiles(m)
-```
+{% endhighlight %}
 
 dapat ditulis dengan
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- m %>% addTiles
-```
+{% endhighlight %}
 
 Atau secara umum
 
-```{r eval=FALSE}
+
+{% highlight r %}
 y <- h(g(f(x)))
-```
+{% endhighlight %}
 
 sama dengan
 
-```{r eval=FALSE}
+
+{% highlight r %}
 y <- x %>% f %>% g %>% h
-```
+{% endhighlight %}
 
 Kembali ke **leaflet**. Kita sudah mempunya peta dangan satu layer peta dasar dalam objek **m**, yang dapat ditampilkan dengan cara memanggil objek tersebut.
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m
-```
+{% endhighlight %}
 
 {% include iframe3x1.html url="https://rstudio-pubs-static.s3.amazonaws.com/510723_a13198697f414e4fad744ff18d5a5d67.html" %}
 
@@ -201,23 +257,25 @@ Gunakan tombol (+) dan (-) untuk *zoom-in* atau *zoom-out* peta.
 
 Peta *dark-mode* dari CartoDB
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- m %>% 
   addProviderTiles("CartoDB.DarkMatter", 
                    layerId = "Road Dark",
                    group = "Road Dark")
-```
+{% endhighlight %}
 
 {% include iframe3x1.html url="https://rstudio-pubs-static.s3.amazonaws.com/510724_26f3934f95c449318d8ab42fb4d3ccf1.html" %}
 
 Atau, citra satelit dari ESRI
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- m %>% 
   addProviderTiles("Esri.WorldImagery", 
                    layerId = "Satellite",
                    group = "Satellite")
-```
+{% endhighlight %}
 
 {% include iframe3x1.html url="https://rstudio-pubs-static.s3.amazonaws.com/510725_6093f96266b74541b829ef672df5cd8c.html" %}
 
@@ -226,28 +284,31 @@ Daftar *provider* yang tersedia dapat dilihat di [sini](https://leaflet-extras.g
 
 **Langkah #4**. Menampilkan titik-titik koordinat rute (yang sudah kita siapkan dalam data-frame **route**) pada peta. Rute merupakan objek *polylines*, dapat ditampilkan dengan menggunakan fungsi `addPolylines`:
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- m %>%
   addPolylines(data=route, lng = ~lon, lat = ~lat, 
                layerId = "Running Route",
                group = "Running Route")
-```
+{% endhighlight %}
 
 {% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/510726_f824523f38d54170bbda99318fb146c6.html" %}
 
 Kita dapat memasukkan parameter tambahan untuk mengatur tampilan, misalnya untuk mengubah warna. Namun, hapus dulu layer sebelumnya!.
 
-```{r eval=FALSE}
-m %>% removeShape("Running Route")
-```
 
-```{r eval=FALSE}
+{% highlight r %}
+m %>% removeShape("Running Route")
+{% endhighlight %}
+
+
+{% highlight r %}
 m <- m %>%
   addPolylines(data=route, lng = ~lon, lat = ~lat, 
                color = "red", opacity = 1,
                layerId = "Running Route",
                group = "Running Route")
-```
+{% endhighlight %}
 
 {% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/510727_aedaaad2c3794caf8cf70264a60f21a3.html" %}
 
@@ -255,25 +316,28 @@ m <- m %>%
 
 * Titik *start* : baris pertama pada *data-frame* **route**
 
-```{r}
+
+{% highlight r %}
 start_point <- head(route, 1)
-```
+{% endhighlight %}
 
 * Titik *finish* : baris terakhir pada *data-frame* **route**
 
-```{r}
+
+{% highlight r %}
 finish_point <- tail(route, 1)
-```
+{% endhighlight %}
 
 Menambahkan *markers* pada peta dapat dilakukan dengan menggunakan fungsi `addMarkers`.
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- m %>%
   addMarkers(data = start_point, lng=~lon, lat=~lat, 
              popup = "Start"
              layerId = "start",
              group = "Start/Finish")
-```
+{% endhighlight %}
 
 {% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511095_857484b1752b4707abefaefe0c6db128.html" %}
              
@@ -286,41 +350,46 @@ https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019
 ```
 Agar penulisan *URL* dari tiap gambar yang digunakan menjadi lebih sederhana, saya membuat fungsi `img_url` berikut
 
-```{r}
+
+{% highlight r %}
 img_url <- function(file_name){
   file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019/visualisasi-rute-lari-leaflet", file_name)
 }
-```
+{% endhighlight %}
 
 Sebelum gambar *custom* bisa digunakan sebagai *marker icon*, maka harus dibuat dulu dengan perintah `makeIcon`
 
-```{r eval=FALSE}
+
+{% highlight r %}
 start_icon <- makeIcon(
   iconAnchorX = 12, iconAnchorY = 12,
   iconUrl = img_url("start.png")
 )
-```
+{% endhighlight %}
 
 Barulah kita ganti *default icon* dengan *custom icon*
 
-```{r eval=FALSE}
-m %>% removeMarker("start")
-```
 
-```{r eval=FALSE}
+{% highlight r %}
+m %>% removeMarker("start")
+{% endhighlight %}
+
+
+{% highlight r %}
 m <- m %>%
   addMarkers(data = start_point, lng=~lon, lat=~lat,
              popup = "Start",
              icon = start_icon,
              layerId = "start",
              group = "Start/Finish") 
-```
+{% endhighlight %}
 
 {% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511101_680bd4802dbf4530963053478447be6a.html" %}
 
 Cara yang sama bisa kita lakukan untuk menambahkan *marker* titik *finish*
 
-```{r eval=FALSE}
+
+{% highlight r %}
 finish_icon <- makeIcon(
   iconAnchorX = 12, iconAnchorY = 12,
   iconUrl = img_url("finish.png")
@@ -332,8 +401,7 @@ m <- m %>%
              icon = finish_icon,
              layerId = "finish",
              group = "Start/Finish")
-
-```
+{% endhighlight %}
 
 {% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511102_c2ab7ffbee1f49d4b70fa978ffb473d7.html" %}
 
@@ -342,31 +410,34 @@ m <- m %>%
 
 Buat *icon*
 
-```{r eval=FALSE}
+
+{% highlight r %}
 picture_icon <- makeIcon(
   iconAnchorX = 12, iconAnchorY = 12,
   iconUrl = img_url("picture.png")
 )
-```
+{% endhighlight %}
 
 Data titik koordinat foto di simpan dalam *data frame* **picture_point**. Kita buat kolom **popup** berupa kode HTML untuk menampilkan foto.
 
-```{r eval=FALSE}
+
+{% highlight r %}
 picture_point$popup <- paste('<img src="', 
                              img_url(picture_point$FileName), 
                              '" height="auto" width="250">', sep='')
-```
+{% endhighlight %}
 
 Tampilkan *markers*
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- m %>%
   addMarkers(data = picture_point, lng=~GPSLongitude, lat=~GPSLatitude,
              popup = ~popup,
              icon = picture_icon,
              options = popupOptions(maxWidth= "auto",keepInView = TRUE),
              group ='Pictures')
-```
+{% endhighlight %}
 
 {% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511103_cca6b87edcd0408c8791cf6b00a2ac59.html" %}
 
@@ -379,13 +450,14 @@ Jika salah satu *marker* kita klik, foto akan muncul pada *pop up*.
 
 Fungsi yang digunakan adalah `addLayersControl`
 
-```{r eval=FALSE}
+
+{% highlight r %}
 m <- m %>%
     addLayersControl(position = 'topright',
                      baseGroups = c("Road", "Road Dark", "Satellite"),
                      overlayGroups = c("Running Route", "Start/Finish", "Pictures"),
                      options = layersControlOptions(collapsed = FALSE)) 
-```
+{% endhighlight %}
 
 {% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/511104_41e7f5e5969041479a616a4f00598af7.html" %}
 
@@ -395,7 +467,8 @@ m <- m %>%
 
 Jika digabungkan, maka inilah kode lengkap untuk menampilkan rute lari beserta foto dengan menggunakan R dan **leaflet**:
 
-```{r eval=FALSE}
+
+{% highlight r %}
 # install package(s) yg diperlukan
 install.packages(c("plotKLM", "exifr", "leaflet"))
 
@@ -501,7 +574,7 @@ m <- leaflet() %>%
 
 # selesai
 m
-```
+{% endhighlight %}
 
 ***
 
