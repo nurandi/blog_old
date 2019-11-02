@@ -13,8 +13,6 @@
   <meta name="author" content="{{ site.author.name }}" />
 
   <!-- Meta description -->
-  {% if page.layout == 'base' %}
-  <meta name="description" content="{{ site.description }}">
   {% if page.meta-description %}
   <meta name="description" content="{{ page.meta-description }}">
   {% elsif page.description %}
@@ -24,7 +22,7 @@
   {% elsif page.excerpt %}
   <meta name="description" content="{{ page.excerpt | strip_html | xml_escape | truncatewords: 30 }}">
   {% else %}
-  <meta name="description" content="{{ page.content | strip_html | xml_escape | truncatewords: 30 }}">
+  <meta name="description" content="{{ site.description }}">
   {% endif %}
   
   <link rel="icon" type="image/png" href="/img/favicon.png" sizes="16x16" />
