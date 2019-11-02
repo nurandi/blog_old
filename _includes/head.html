@@ -13,7 +13,7 @@
   <meta name="author" content="{{ site.author.name }}" />
 
   <!-- Meta description -->
-  {% if page.url == "/index.html" %}
+  {% if page.layout == 'base' %}
   <meta name="description" content="{{ site.description }}">
   {% if page.meta-description %}
   <meta name="description" content="{{ page.meta-description }}">
