@@ -3,6 +3,8 @@ _site
 _caches
 .sass-cache
 .vagrant
+.Rhistory
+.Rapp.history
 
 # general
 .DS_Store
