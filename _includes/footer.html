@@ -143,6 +143,16 @@
             </a>
           </li>
         {% endif %}
+      {% if site.author.strava and site.footer-links-active.strava %}
+          <li>
+            <a href="https://www.strava.com/athletes/{{ site.author.strava }}" title="Strava">
+              <span class="fa-strava fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        {% endif %}
 		  {% if site.footer-links-active.rss %}
         <li>
         <a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">

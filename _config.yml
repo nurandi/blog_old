@@ -40,6 +40,7 @@ author:
   twitter: nurandi
   google-plus: +NurAndiSetiabudi
   linkedin: nurandi
+  strava: nurandi
 
 # Social links to show in the footer
 footer-links-active:
@@ -51,6 +52,7 @@ footer-links-active:
   google-plus: true
   github: true
   linkedin: true
+  strava: true
 
 # share links to show in posts
 share-links-active:
