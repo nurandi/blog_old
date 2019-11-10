@@ -15,7 +15,13 @@ common-js:
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+{% if page.lang %}
+  <html lang="{{ page.lang }}">
+{% elsif site.lang %}
+  <html lang="{{ site.lang }}">
+{% else %}
+  <html lang="id">
+{% endif %}
   <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
   {% include head.html %}
 
