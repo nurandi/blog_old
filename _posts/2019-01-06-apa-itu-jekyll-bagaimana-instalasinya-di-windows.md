@@ -78,7 +78,7 @@ Tahapannya:
 
     ![Check WSL](/img/blog/2019/apa-jekyll-install/install-bash5.png)
 
-    **Update:** Seluruh tahapan 1-10 di atas dapat dilakukan dengan menjalankan perintah berikut pada **Windows PowerShell** (jalankan sebagai Administrator:
+    **Update:** Seluruh tahapan 1-10 di atas dapat dilakukan dengan menjalankan perintah berikut pada **Windows PowerShell** (jalankan sebagai Administrator):
 
     ```
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
