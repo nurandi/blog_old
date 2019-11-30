@@ -78,7 +78,6 @@ Tahapannya:
 
     ![Check WSL](/img/blog/2019/apa-jekyll-install/install-bash5.png)
 
-
    **Update:** Seluruh tahapan 1-10 di atas dapat dilakukan dengan menjalankan perintah berikut pada **Windows PowerShell** (jalankan sebagai Administrator:
 
    ```
@@ -86,7 +85,8 @@ Tahapannya:
    ```
 
    ![Instal bash](/img/blog/2019/apa-jekyll-install/jekyll-powershell.png)
-	
+
+
 11. Windows akan menginstal komponen-komponen yang diperlukan. Setelah selesai lakukan **restart** kembali.
 12. Dari *start menu*, buka **Command Prompt** (dapat dilakukan dengan memasukan kata kunci "cmd")
 13. Pada *Command Prompt*, masukan perintah berikut lalu tekan tombol enter
