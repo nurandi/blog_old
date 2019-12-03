@@ -35,6 +35,7 @@ body {
 
 
 
+
 /* Custom CSS ------------ by nurandi.id */
 
 figure {
@@ -52,4 +53,14 @@ figure.image, .video-player, .iframe {
 	font-style: italic;
 }
 
+div.social-icons-footer a:link, div.social-icons-footer a:visited{
+	color: #333 ;
+	text-decoration: none;
+	border: none;
+}
 
+div.social-icons-footer a {
+	background-image:none
+}
+
+	
