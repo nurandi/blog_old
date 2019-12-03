@@ -5,7 +5,7 @@ author:      Nur Andi Setiabudi
 description: "Hi, I'm Andi. This is my personal blog where I talk about data, R code and other random stuff."
 baseurl:     ""
 url:         "https://www.nurandi.id"
-date_format: "%b %-d, %Y"
+date_format: "%-d %b %Y"
 
 header_pages:
  - pages/blog.md
