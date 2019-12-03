@@ -94,23 +94,23 @@ $form-field-padding-x: .5rem;
 
 // Code
 $pre-border-radius: 0;
-$pre-background-color: #fafafa;
+$pre-background-color: $dark-gray;
 $hljs-comment: $mid-gray;
-$hljs-keyword: $dark-blue;
+$hljs-keyword: $green;
 $hljs-name: $dark-gray;
 $hljs-number: $dark-green;
 $hljs-string: $red;
 $hljs-title: $red;
-$hljs-type: $dark-blue;
-$hljs-tag: $dark-blue;
+$hljs-type: $blue;
+$hljs-tag: $blue;
 $hljs-attribute: $dark-green;
 $hljs-regexp: $dark-green;
 $hljs-symbol: $purple;
-$hljs-built-in: $dark-blue;
+$hljs-built-in: $blue;
 $hljs-preprocessor: $mid-gray;
 $hljs-deletion: $light-pink;
 $hljs-addition: $light-green;
-$hljs-change: $dark-blue;
+$hljs-change: $blue;
 $hljs-chunk: $light-gray;
 
 // Header
