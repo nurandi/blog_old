@@ -59,12 +59,23 @@ div.social-icons-footer a:link, div.social-icons-footer a:visited{
 	border: none;
 }
 
+div.social-icons-footer{
+	margin-bottom:$space-1;
+}
+
+
 div.social-icons-footer a {
 	background-image:none
 }
 
 #disqus_thread {
 	margin-top: 40px;
+}
+
+.social-icons a.fab, .social-icons a.fas {
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0.2em;
 }
 
 
