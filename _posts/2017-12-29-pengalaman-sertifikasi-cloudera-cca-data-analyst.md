@@ -21,6 +21,7 @@ share:
   - linkedin
 excerpt: Setelah beberapa kali mau daftar, tapi gak jadi, mau daftar lagi tapi cuman wacana, akhirnya kemarin (28/12), jam 9-11 pagi, saya benar-benar ambil sertifikasi Cloudera Certified Data Analyst (CCA159). Sekitar 40 menit setelahnya, saya dapat email dari Cloudera yang menyatakan saya lulus. Alhamdulillahirabbil alamin.
 ---
+
 Setelah beberapa kali _mau daftar, tapi gak jadi, mau daftar lagi tapi cuman wacana_, akhirnya kemarin (28/12), jam 9-11 pagi, saya benar-benar ambil sertifikasi [*Cloudera Certified Data Analyst (CCA159)*](https://www.cloudera.com/more/training/certification/cca-data-analyst.html). Sekitar 40 menit setelahnya, saya dapat email dari Cloudera yang menyatakan saya lulus. _**Alhamdulillahirabbil alamin**_. 
 
 Melalui email tersebut Cloudera tidak hanya menyampaikan bahwa saya lulus, tetapi juga keterangan untuk tiap-tiap soal: apakah benar atau salah. Jika salah, disebutkan juga alasannya. Diberitahukan juga bahwa saya akan mendapatkan sertifikat elektronik melalui email yang akan dikirimkan dalam waktu 2-3 hari kerja.
