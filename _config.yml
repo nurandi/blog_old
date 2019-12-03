@@ -31,6 +31,7 @@ animated:             false
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    true
+show_social_icons_footer:   true
 ajaxify_contact_form: true
 enable_mathjax: false
 extended_fonts: false
@@ -59,6 +60,7 @@ reddit_username:
 bitbucket_username:
 stackoverflow_id:
 twitter_username: nurandi
+facebook_username: nsetiabudi
 skype_username:
 steam_nickname:
 google_plus_id:
@@ -70,9 +72,10 @@ paypal_url:
 flattr_button:
 telegram_username:
 vk_id:
+strava_username: nurandi
 
 # Post sharing icons
-show_sharing_icons: false
+show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true
