@@ -8,5 +8,5 @@
 {% else %}
 <img src="{{ include.url }}" alt="{{ include.alt }}" />
 {% endif %}
-<span class="caption">{{ include.caption }}</span>
+<span class="caption" markdown="1">{{ include.caption }}</span>
 </figure>
