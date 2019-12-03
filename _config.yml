@@ -30,7 +30,7 @@ google_site_verification: "4DJg4x5V5p2gt8TsgMYKArwfgQjvh-rKL29XqMsUNVA"
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    true
+show_social_icons:    false
 show_social_icons_footer:   true
 ajaxify_contact_form: true
 enable_mathjax: false
