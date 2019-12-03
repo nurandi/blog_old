@@ -9,8 +9,6 @@ date_format: "%b %-d, %Y"
 
 header_pages:
  - pages/blog.md
- - pages/about.md
- - pages/contact.html
 
 # Google services
 google_verification:
