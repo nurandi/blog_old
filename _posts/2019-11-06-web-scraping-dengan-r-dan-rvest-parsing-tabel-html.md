@@ -26,7 +26,7 @@ Salah satu favorit saya dalam *package* **rvest** adalah fungsi `html_table`. Se
 ![BBC EPL Top Scorers]({{ base_path }}/img/blog/2019/web-scraping-r-rvest-parsing-tabel/bbc-epl-table.png)
 {% endcapture %}
 
-<figure>
+<figure class="image">
 {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
 <span class="caption" markdown="1">Klasemen Liga Inggris. Diakses dari [BBC Sport](https://www.bbc.com/sport/football/premier-league/table) pada 5 November 2019. Semoga sampai akhir musim urutannya tidak berubah. YNWA!</span>
 </figure>
