@@ -32,3 +32,24 @@ body {
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+
+
+/* Custom CSS ------------ by nurandi.id */
+
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure.image, .video-player {
+	margin-bottom:40px;
+	margin-top:40px;
+}
+
+.caption{
+	font-size: 70%;
+	font-style: italic;
+}
+
+
