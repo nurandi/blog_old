@@ -136,3 +136,5 @@ exclude:
   - README.md
   - screenshot.png
   - vendor
+  
+permalink: /blog/:title/
