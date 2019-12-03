@@ -15,7 +15,7 @@ google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
 google_analytics: "UA-92182606-1"
-google_tag_manager: "GTM-KXMLW7N"
+google_tag_manager: 
 # Bing services
 bing_verification: "019E6E83BD7D283A454F41125999278E"
 
