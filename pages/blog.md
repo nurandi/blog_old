@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Articles
+title: Blog
 permalink: /blog/
 author_profile: true
 ---
