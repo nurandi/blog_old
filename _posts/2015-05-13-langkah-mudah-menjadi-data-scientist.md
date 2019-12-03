@@ -11,7 +11,7 @@ redirect_from:
 - /artikel/langkah-mudah-menjadi-data-scientist
 - /2015/05/13/langkah-mudah-menjadi-data-scientist
 - /artikel/langkah-mudah-menjadi-data-scientist/
-
+excerpt: Mmmm ... tidak terlalu mudah, memang. Berikut adalah delapan langkah untuk menjadi seorang data scientist menurut Datacamp.
 ---
 Mmmm ... tidak terlalu mudah, memang. Berikut adalah delapan langkah
 ~~mudah~~ untuk menjadi seorang *data scientist* menurut
