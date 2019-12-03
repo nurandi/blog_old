@@ -1,0 +1,201 @@
+# --- General options --- #
+
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+url: "https://www.nurandi.id"
+baseurl: ""
+
+# Name of website
+title: Nur Andi Setiabudi
+
+# Short description of your site
+description: Hi, I'm Andi. This is my personal blog where I talk about data, R code and other random stuff.
+
+
+# --- Navigation bar options --- #
+
+# List of links in the navigation bar
+navbar-links:
+  Blog:
+    - Archive: "blog/"
+    - By Topic: "topic/"
+  About: "#"
+
+    
+# --- Avatar & title image --- #
+
+# avatar: "/images/img/avatar-icon.png"
+title-img: "/img/avatar-icon.png"
+
+
+# --- Footer options --- #
+
+# Social links
+author:
+  name: Nur Andi Setiabudi
+  email: "nurandi@gmail.com"
+  instagram: nurandi
+  facebook: nsetiabudi
+  github: nurandi
+  twitter: nurandi
+  google-plus: +NurAndiSetiabudi
+  linkedin: nurandi
+  strava: nurandi
+
+# Social links to show in the footer
+footer-links-active:
+  rss: true
+  instagram: true
+  facebook: true
+  email: true
+  twitter: true
+  google-plus: true
+  github: true
+  linkedin: true
+  strava: true
+
+# share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  google: true
+  linkedin: true
+
+# How to display the link to the website in the footer
+url-pretty: "NURANDI.id"  # eg. "deanattali.com/beautiful-jekyll"
+
+# --- Misc --- #
+
+# Disqus shortname
+disqus: "nurandi-id"
+
+# Google Analytics ID
+google_analytics: "UA-92182606-1"
+
+# Google Tag Manager ID
+# gtm: "GTM-KXMLW7N"
+
+# Google webmaster
+google_site_verification: "4DJg4x5V5p2gt8TsgMYKArwfgQjvh-rKL29XqMsUNVA"
+
+# Bing webmaster
+bing_site_verification: "019E6E83BD7D283A454F41125999278E"
+
+# Online Analytics
+online_analytics: "6c71ef74-551f-49a4-a454-45683f516e0c"
+
+# Facebook App ID
+# fb_app_id: ""
+
+
+# Excerpt word length
+excerpt_length: 70
+
+# Title separator
+title-separator: "|"
+
+
+# --- Additional options --- #
+
+# Output options
+timezone: "Asia/Jakarta"
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page/:num/
+
+kramdown:
+  input: GFM
+
+# Default YAML values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      categories: "blog"
+      comments: true
+      social-share: true # sharing botton
+      share: twitter facebook linkedin # autoposting
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
+
+# Use tags pages (not recommended in GitHub pages)
+link-tags: false
+
+# Exclude these files from production site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - Vagrantfile
+
+# list of gems  
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  
+# prose.io config
+prose:
+  rooturl: '_posts'
+  media: 'image'
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Add a thumbnail image to your post."
+          placeholder: "Thumbnail"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189

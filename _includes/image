@@ -1,0 +1,12 @@
+{% include base_path %}
+{% assign url1 = include.url | slice: 0 %}
+
+
+<figure>
+{% if url1 == "/" %}
+<img src="{{ base_path }}{{ include.url }}" alt="{{ include.alt }}" />
+{% else %}
+<img src="{{ include.url }}" alt="{{ include.alt }}" />
+{% endif %}
+<span class="caption">{{ include.caption }}</span>
+</figure>
