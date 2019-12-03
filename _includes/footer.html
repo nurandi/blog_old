@@ -1,13 +1,14 @@
 <footer class="center">
+
+	{% if site.show_social_icons_footer %}
+		{% include social_links_footer.html %}
+	{% endif %}
+	
   <div class="measure">
     <small>
       (c) {{ "now" | date: "%Y" }} {{ site.author }} &#8226; <a href="https://github.com/johnotander/pixyll">Pixyll Theme</a> by <a href="http://johnotander.com">John Otander</a> &#8226; MIT License
     </small>
   </div>
-  
-    {% if site.show_social_icons_footer %}
-        {% include social_links_footer.html %}
-    {% endif %}
 	  
 </footer>
 	  
