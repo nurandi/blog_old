@@ -23,7 +23,7 @@ Salah satu favorit saya dalam *package* **rvest** adalah fungsi `html_table`. Se
 
 {% include base_path %}
 {% capture fig_img %}
-![BBC EPL Top Scorers]({{ base_path }}/img/blog/2019/web-scraping-r-rvest-parsing-tabel/bbc-epl-table.png)
+![BBC EPL Top Scorers]({{ base_path }}/img/blog/2019-11-06-web-scraping-dengan-r-dan-rvest-parsing-tabel-html/bbc-epl-table.png)
 {% endcapture %}
 
 <figure class="image">

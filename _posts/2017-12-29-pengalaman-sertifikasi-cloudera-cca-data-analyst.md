@@ -14,7 +14,7 @@ tags:
   - certification
   - cca
 author: Nur Andi Setiabudi
-share-img: /img/blog/pengalaman-cca-data-analyst/cca-data-analyst.png
+share-img: /img/blog/2017-12-29-pengalaman-sertifikasi-cloudera-cca-data-analyst/cca-data-analyst.png
 share:
   - facebook
   - twitter
@@ -29,7 +29,7 @@ Melalui email tersebut Cloudera tidak hanya menyampaikan bahwa saya lulus, tetap
 {% include base_path %}
 
 {% capture fig_img %}
-![Nur Andi Setiabudi - Cloudera Certified CCA Data Analyst]({{ base_path }}/img/blog/pengalaman-cca-data-analyst/cca-data-analyst.png)
+![Nur Andi Setiabudi - Cloudera Certified CCA Data Analyst]({{ base_path }}/img/blog/2017-12-29-pengalaman-sertifikasi-cloudera-cca-data-analyst/cca-data-analyst.png)
 {% endcapture %}
 
 <figure>

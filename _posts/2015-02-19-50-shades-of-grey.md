@@ -114,7 +114,7 @@ for (j in 0:(rowCount-1))
 }
 ```
 
-![R-102-shades-of-grey]({{ site.url }}{{ site.baseurl }}/img/blog/r-50-shades/R-102-shades-of-grey.png)
+![R-102-shades-of-grey]({{ site.url }}{{ site.baseurl }}/img/blog/2015-02-19-50-shades-of-grey/R-102-shades-of-grey.png)
 
 Lalu bagaimana mendapatkan *50 Shades of Grey*? Fungsi
 `colorRampPalette` dapat digunakan untuk menghasilkan warna-warna baru
@@ -137,6 +137,6 @@ image(mat, axes = FALSE, col = fiftyGreys)
 box()
 ```
 
-![R-50-shades-of-grey]({{ site.url }}{{ site.baseurl }}/img/blog/r-50-shades/R-50-shades-of-grey.png)
+![R-50-shades-of-grey]({{ site.url }}{{ site.baseurl }}/img/blog/2015-02-19-50-shades-of-grey/R-50-shades-of-grey.png)
 
 *So, why limit yourself to "50 Shades of Grey"?*

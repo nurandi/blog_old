@@ -27,7 +27,7 @@ Nazief dan Andriani dan algoritma Porter.
 {% include base_path %}
 
 {% capture fig_img %}
-![Root word]({{ base_path }}/img/blog/katadasar-stemming-indo/root words.jpg)
+![Root word]({{ base_path }}/img/blog/2015-12-16-katadasar-stemming-bahasa-indonesia-dengan-r/root words.jpg)
 {% endcapture %}
 
 <figure>

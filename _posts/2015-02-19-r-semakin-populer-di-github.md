@@ -29,7 +29,7 @@ Python.
 {% include base_path %}
 
 {% capture fig_img %}
-![GitHut.info]({{ base_path }}/img/blog/r-populer-github/GitHut.png)
+![GitHut.info]({{ base_path }}/img/blog/2015-02-19-r-semakin-populer-di-github/GitHut.png)
 {% endcapture %}
 
 <figure>

@@ -24,7 +24,7 @@ detail mengenai swirl dapat diperoleh di
 [swirlstats.com](http://swirlstats.com/) atau di [halaman Github
 ini](https://github.com/swirldev/swirl).
 
-[![Swirl]({{ site.url }}{{ site.baseurl }}/img/blog/belajar-r-swirl/swirl-logo.png)](http://swirlstats.com/)
+[![Swirl]({{ site.url }}{{ site.baseurl }}/img/blog/2015-01-10-swirl-belajar-r-dengan-r/swirl-logo.png)](http://swirlstats.com/)
 
 ## Menginstal swirl
 

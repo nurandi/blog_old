@@ -110,7 +110,7 @@ wordcloud(text$text, text$Freq)
 
 dan hasilnya ...
 
-![Wordcloud]({{ site.url }}{{ site.baseurl }}/img/blog/r-wordcloud/word-cloud-1.png)
+![Wordcloud]({{ site.url }}{{ site.baseurl }}/img/blog/2015-01-27-membuat-word-cloud-dengan-r/word-cloud-1.png)
 
 Bagaimana, mudah bukan?
 
@@ -134,7 +134,7 @@ text = text[!is.element(text$text, stopw),]
 Setelah *stop-words* dihapus, jalankan kembali fungsi `wordcloud()` dan
 ini kira-kira *word cloud* yang akan kita peroleh.
 
-![Wordcloud]({{ site.url }}{{ site.baseurl }}/img/blog/r-wordcloud/word-cloud-2.png)
+![Wordcloud]({{ site.url }}{{ site.baseurl }}/img/blog/2015-01-27-membuat-word-cloud-dengan-r/word-cloud-2.png)
 
 Bagaimana, terlihat lebih baik?
 
@@ -148,7 +148,7 @@ wordcloud(text$text, text$Freq, random.order=FALSE, rot.per=0.25
 
 Hasilnya ...
 
-![Wordcloud]({{ site.url }}{{ site.baseurl }}/img/blog/r-wordcloud/word-cloud-3.png)
+![Wordcloud]({{ site.url }}{{ site.baseurl }}/img/blog/2015-01-27-membuat-word-cloud-dengan-r/word-cloud-3.png)
 
 Untuk mengetahui parameter apa saja yang bisa digunakan berikut
 penjelasannya, gunakan perintah `?wordcloud`.

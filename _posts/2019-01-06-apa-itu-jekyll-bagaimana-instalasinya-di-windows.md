@@ -10,7 +10,7 @@ tags:
   - jekyll
 author: Nur Andi Setiabudi
 excerpt: Jekyll, sesuai tagline "a simple, blog-aware, static site generator" adalah  software untuk membuat  static website. Untuk menghasilkan sebuah blog, Jekyll hanya membutuhkan template, file-file artikel yang ditulis dengan format Markdown dan sebuah file konfigurasi. Kemudian hasilnya kita upload ke server. Itulah blog kita. Sesederhana itu.
-share-img: /img/blog/2019/apa-jekyll-install/logo-jekyll.jpg
+share-img: /img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/logo-jekyll.jpg
 share:
   - facebook
   - twitter
@@ -23,7 +23,7 @@ Ketika saya "berniat" menulis kembali beberapa hari yang lalu, saya baru menyada
 
 Sekalian install Jekyll, saya tuliskan saja tahapannya. Lumayan, dapat satu artikel kan. Selain sebagai catatan saya, mudah-mudahan bisa bermanfaat ketika ada yang membutuhkan. 
 
-{% include image url="/img/blog/2019/apa-jekyll-install/logo-jekyll.jpg" alt="Logo Jekyll" caption="Logo Jekyll" %}
+{% include image url="/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/logo-jekyll.jpg" alt="Logo Jekyll" caption="Logo Jekyll" %}
 
 # Apa itu Jekyll?
 
@@ -60,11 +60,11 @@ Tahapannya:
 3. Klik **For Developer**
 4. Pada bagian "Use developer features", pilih **Developer Mode**
 
-    ![Use developer features](/img/blog/2019/apa-jekyll-install/install-bash1.png)
+    ![Use developer features](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-bash1.png)
 	
 5. Windows akan menampikan konfirmasi untuk mengaktifkan _developer mode_. Klik **Yes**
 
-    ![Konfirmasi developer mode](/img/blog/2019/apa-jekyll-install/install-bash2.png)
+    ![Konfirmasi developer mode](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-bash2.png)
 	
 6. Windows akan menginstal komponen-komponen yang diperlukan. Setelah selesai lakukan **restart/reboot** PC
 
@@ -72,11 +72,11 @@ Tahapannya:
 8. Klik **Programs**
 9. Klik **Turn Windows features on or off**
 
-    ![Turn windows features](/img/blog/2019/apa-jekyll-install/install-bash4.png)
+    ![Turn windows features](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-bash4.png)
 
 10. Cek **Windows Subsystem for Linux (beta)**, lalu klik **OK**
 
-    ![Check WSL](/img/blog/2019/apa-jekyll-install/install-bash5.png)
+    ![Check WSL](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-bash5.png)
 
     **Update:** Seluruh tahapan 1-10 di atas dapat dilakukan dengan menjalankan perintah berikut pada **Windows PowerShell** (jalankan sebagai Administrator):
 
@@ -84,7 +84,7 @@ Tahapannya:
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     ```
 
-    ![Instal bash](/img/blog/2019/apa-jekyll-install/jekyll-powershell.png)
+    ![Instal bash](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/jekyll-powershell.png)
 
 
 11. Windows akan menginstal komponen-komponen yang diperlukan. Setelah selesai lakukan **restart** kembali.
@@ -101,7 +101,7 @@ Tahapannya:
 17. Masukan _password_ lalu tekan enter
 18. Masukan kembali _password_ lalu tekan enter
 
-    ![Instal bash](/img/blog/2019/apa-jekyll-install/install-bash10.png)
+    ![Instal bash](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-bash10.png)
 	
 19. Instalasi **Windows Subsystem for Linux** selesai. *Restart* kembali PC
 
@@ -112,7 +112,7 @@ Tahapannya:
 
 1. Dari *start menu*, buka aplikasi **Bash on Ubuntu on Windows**
 
-    ![Bash](/img/blog/2019/apa-jekyll-install/install-bash11.png)
+    ![Bash](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-bash11.png)
 	
 	Atau, bisa juga buka **Command Prompt**, lalu ketikan perintah berikut lalu enter
 
@@ -129,7 +129,7 @@ Tahapannya:
 	
 	Masukkan _password_ yang dibuat pada tahapan pertama poin 17. Tunggu hingga proses selesai.
 	
-	![Update Ubuntu](/img/blog/2019/apa-jekyll-install/install-jekyll1.png)
+	![Update Ubuntu](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-jekyll1.png)
 	
 
 3. Jekyll berjalan pada **Ruby**. Instal **Ruby** dengan perintah berikut
@@ -138,7 +138,7 @@ Tahapannya:
    sudo apt-get install -y build-essential ruby-full
    ```
 	
-	![Install Ruby](/img/blog/2019/apa-jekyll-install/install-jekyll2.png)	
+	![Install Ruby](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-jekyll2.png)	
 	
 
 4. Update **Ruby gem**
@@ -147,7 +147,7 @@ Tahapannya:
    sudo gem update –system
    ```
 	
-	![Update gems](/img/blog/2019/apa-jekyll-install/install-jekyll3.png)	
+	![Update gems](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-jekyll3.png)	
 	
 
 4. Instal **Jekyll**
@@ -156,7 +156,7 @@ Tahapannya:
    sudo gem install jekyll bundler
    ```
 	
-	![Install jekyll](/img/blog/2019/apa-jekyll-install/install-jekyll4.png)	
+	![Install jekyll](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/install-jekyll4.png)	
 	
 
 	
@@ -178,11 +178,11 @@ Setelah Jekyll sukses diinstal, saatnya kita membuat blog. Caranya sangat mudah.
 	
     Jekyll akan menginisiasi blog baru. Tunggu sampai proses selesai.
 	
-    ![New jekyll](/img/blog/2019/apa-jekyll-install/new-jekyll1.png)
+    ![New jekyll](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/new-jekyll1.png)
 	
 	Silakan periksa folder **D:\Personal\Blog**, akan ada folder baru dengan nama **myblog**. Folder inilah yang berisi file-file statis yang diperluka oleh Jekyll untuk membentuk blog.
 
-	![New jekyll Folder](/img/blog/2019/apa-jekyll-install/new-jekyll2.png)
+	![New jekyll Folder](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/new-jekyll2.png)
 	
 	Perintah `jekyll new myblog` menginisiasi blog baru dengan *template default* yaitu [minima](https://github.com/jekyll/minima). Jika ingin menggunakan *template* lain, bisa *download/clone* dari [Github](https://github.com/topics/jekyll-theme) atau *download* dari sumber lain seperti [ini](https://jekyllthemes.io/free) dan [ini](http://themes.jekyllrc.org/). **Ganti** semua file dan folder di dalam folder **myblog** dengan *template* yang diinginkan.
 	
@@ -198,15 +198,15 @@ Setelah Jekyll sukses diinstal, saatnya kita membuat blog. Caranya sangat mudah.
    bundle exec jekyll serve
    ```
 	
-	![New jekyll](/img/blog/2019/apa-jekyll-install/new-jekyll3.png)
+	![New jekyll](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/new-jekyll3.png)
 	
 4. Buka browser. Blog dapat diakses melalui alamat **http://127.0.0.1:4000**
 
-	![New Blog](/img/blog/2019/apa-jekyll-install/new-jekyll4.png)
+	![New Blog](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/new-jekyll4.png)
 
 Selamat, blog statis pertama telah selesai dibuat dengan menggunakan Jekyll. Selanjutnya, kita perlu menyunting file konfigurasi **_config.yml** untuk mengubah judul, *link,* maupun catatan kaki *(footer).* Buka file **_config.yml** dengan *text editor* seperti Notepad. 
 
-![Edit config](/img/blog/2019/apa-jekyll-install/edit-config.png)
+![Edit config](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/edit-config.png)
 	
 Perubahan file konfigurasi tidak langsung dieksekusi oleh. Silakan kembali ke **Bash on Ubuntu on Windows**, lalu *stop* Jekyll *service* dengan cara menekan tombol *(keyboard)* **Ctrl+C**, lalu jalankan kembali dengan perintah
 
@@ -216,7 +216,7 @@ bundle exec jekyll serve
 
 Silakan *refresh* browser. Halaman muka blog akan berubah menjadi seperti ini
 
-![Edit config](/img/blog/2019/apa-jekyll-install/edit-config-new.png)
+![Edit config](/img/blog/2019-01-06-apa-itu-jekyll-bagaimana-instalasinya-di-windows/edit-config-new.png)
 
 Selain mengubah *title*, *url* dan *description*, banyak pengaturan yang bisa dilakukan melalui file *_config.xml*, misalnya menampilkan menu, mengaktifkan komentar dengan [Disqus](https://disqus.com/) dan lain-lain. Selengkapnya bisa dipelajari di laman dokumentasi *template* yang digunakan.
 

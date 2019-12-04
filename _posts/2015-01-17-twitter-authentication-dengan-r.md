@@ -35,7 +35,7 @@ sangat mudah. Kita hanya perlu membuat aplikasi pada Twitter.
     `https://`. Jika tidak punya website, isi dengan URL website apa
     saja yang penting valid. Untuk *Callback URL* biarkan saja kosong.
 
-{% include image url="/img/blog/twitter-auth-r/create-new-app-twitter.png" alt="create-new-app-twitter" caption="Create an application" %}
+{% include image url="/img/blog/2015-01-17-twitter-authentication-dengan-r/create-new-app-twitter.png" alt="create-new-app-twitter" caption="Create an application" %}
 
 -   Setujui *Developer Agreement* dengan cek *"Yes, I agree"*
 -   Klik *Create your Twitter application*
@@ -49,7 +49,7 @@ sangat mudah. Kita hanya perlu membuat aplikasi pada Twitter.
     token secret*.
 	
 
-{% include image url="/img/blog/twitter-auth-r/ilustrasi-app-token.png" alt="ilustrasi-app-token.png" caption="Ilustrasi Twitter App yang menampilkan keys dan tokens (15 Jan 2019)" %}
+{% include image url="/img/blog/2015-01-17-twitter-authentication-dengan-r/ilustrasi-app-token.png" alt="ilustrasi-app-token.png" caption="Ilustrasi Twitter App yang menampilkan keys dan tokens (15 Jan 2019)" %}
 
 {% include textbox text="**UPDATE** (16 Januari 2019): Pada Juli 2018, Twitter [mengubah kebijakan](https://blog.twitter.com/developer/en_us/topics/tools/2018/new-developer-requirements-to-protect-our-platform.html) terkait registrasi aplikasi baru. Kini, untuk membuat aplikasi harus menggunakan *developer account*. Saat melakukan registrasi, Twitter meminta kita untuk menjelaskan secara lebih detail hal-hal terkait dengan aplikasi. Selanjutnya Twitter akan meninjau, apakah aplikasi disetujui atau tidak. Kabar baiknya, aplikasi-aplikai yang didaftarkan sebelum diterapkannya kebijakan baru ini masih bisa digunakan. *Setidaknya sampai hari ini*. Info selengkapnya [di sini](https://blog.twitter.com/developer/en_us/topics/tools/2018/new-developer-requirements-to-protect-our-platform.html)."
 %}

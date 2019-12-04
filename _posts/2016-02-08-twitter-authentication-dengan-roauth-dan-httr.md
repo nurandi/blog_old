@@ -132,11 +132,11 @@ browser akan membuka link tersebut secara otomatis).
 Browser akan menampilkan laman di mana kita diminta untuk memberikan
 "izin" kepada aplikasi.
 
-![Authorise app]({{ site.url }}{{ site.baseurl }}/img/blog/twitter-auth-roauth-httr/twitter-auth-token1.png)
+![Authorise app]({{ site.url }}{{ site.baseurl }}/img/blog/2016-02-08-twitter-authentication-dengan-roauth-dan-httr/twitter-auth-token1.png)
 
 Klik **"Authorize app"**, Twitter akan menampilkan sebuah **PIN**.
 
-![Enter PIN]({{ site.url }}{{ site.baseurl }}/img/blog/twitter-auth-roauth-httr/twitter-auth-token2.png)
+![Enter PIN]({{ site.url }}{{ site.baseurl }}/img/blog/2016-02-08-twitter-authentication-dengan-roauth-dan-httr/twitter-auth-token2.png)
 
 *Copy-paste* PIN tersebut ke *R console*, dan tekan **enter** - *access
 token* berhasil kita *generate*. Jika terjadi *error*
@@ -279,7 +279,7 @@ Dengan demikian, setidaknya ada tiga alternatif yang bisa digunakan
 dalam proses autentikasi seperti yang tampilkan dalam *flow-char*
 berikut.
 
-![Twitter OAuth flowchar]({{ site.url }}{{ site.baseurl }}/img/blog/twitter-auth-roauth-httr/twitter-auth-flowchart.png)
+![Twitter OAuth flowchar]({{ site.url }}{{ site.baseurl }}/img/blog/2016-02-08-twitter-authentication-dengan-roauth-dan-httr/twitter-auth-flowchart.png)
 
 [**UPDATE\#2:**] *Twitter token* yang di-*generate* baik
 oleh `httr::Token1.0` maupun `httr::oauth1.0_token` dapat digunakan

@@ -28,7 +28,7 @@ dan juga dibaca. Untuk menulis teks dalam format *italic* (cetak
 miring), misalnya, kita hanya perlu menggunakan *asterisks* (`*`), tidak
 lagi menggunakan tag HTML `<i>`.
 
-![markdown]({{ site.url }}{{ site.baseurl }}/img/blog/format-teks-markdown/markdown.png)
+![markdown]({{ site.url }}{{ site.baseurl }}/img/blog/2015-01-11-format-teks-dengan-markdown/markdown.png)
 
 
 Karena sangat mudah digunakan, Markdown menjadi salah satu standar dalam
@@ -190,7 +190,7 @@ Selamat mencoba.
 mengkombinasikan sintaks Markdown dengan kode R untuk membuat dokumen,
 presentasi dan laporan dengan R.
 
-![markdown-chunk]({{ site.url }}{{ site.baseurl }}/img/blog/format-teks-markdown/markdownChunk.png)
+![markdown-chunk]({{ site.url }}{{ site.baseurl }}/img/blog/2015-01-11-format-teks-dengan-markdown/markdownChunk.png)
 
 Tunggu tutorial bagimana menggunakan R Markdown. Karena, *honestly*,
 saya juga belum pernah menggunakannya. :)

@@ -28,7 +28,7 @@ dan berbagai faktor yang mempengaruhi pelanggan (dari
 {% include base_path %}
 
 {% capture fig_img %}
-![Twitter]({{ site.url }}{{ site.baseurl }}/img/blog/crawling-data-twitter/twitter-background.jpg)
+![Twitter]({{ site.url }}{{ site.baseurl }}/img/blog/2015-01-31-crawling-data-twitter-menggunakan-r/twitter-background.jpg)
 {% endcapture %}
 
 <figure>

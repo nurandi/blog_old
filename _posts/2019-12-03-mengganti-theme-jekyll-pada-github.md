@@ -14,7 +14,7 @@ excerpt: Mengganti theme Jekyll sebenarnya bisa dilakukan hanya dengan copy/past
 ---
 Salah satu nilai *plus* [Jekyll](https://jekyllrb.com/) adalah fleksibilitas untuk mengubah *theme*/tema. Meskipun merupakan *web statis*, nyatanya di jagad internet banyak sekali *theme* yang bisa digunakan untuk berbagai keperluan, mulai dari halaman biodata sampai web *ecommerce*. Tidak percaya? [Silakan Googling sendiri](https://www.google.com/search?q=jekyll+themes). Hanya saja, mengganti *theme* sebuah blog berbasiskan Jekyll ternyata tidak semudah mengganti *theme* pada Wordpress yang cukup dilakukan dengan beberapa klik saja. Ada "keruwetan" sendiri. Setidaknya itu yang sama alami dalam beberapa hari terakhir saat mengganti *theme* blog [NURANDI.id](https://nurandi.id); yang awalnya [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) saya ganti dengan [Pixyll](https://github.com/johno/pixyll). Sebenarnya kedua *theme* itu hampir serupa. Sama-sama *theme* minimalis yang fokus pada *readability*. Tapi saya merasa Pixyll ini lebih fresh. Baiklah!
 
-{% include image url='/img/blog/2019/mengganti-theme-jekyll/nurandi-id-old.jpg' caption="Tampilan lama blog NURANDI.id dengan *theme* [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)" %}
+{% include image url='/img/blog/2019-12-03-mengganti-theme-jekyll-pada-github/nurandi-id-old.jpg' caption="Tampilan lama blog NURANDI.id dengan *theme* [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)" %}
 
 Blog [NURANDI.id](https://nurandi.id) sebenarnya merupakan sebuah [Github page](https://pages.github.com/). Seluruh tulisan, kode, *theme* dan material lain untuk membangun blog saya *hosting* di [GitHub](https://github.com/nurandi/nurandi.github.io). Selain sengaja menjadikan blog bersifat *open source*, GitHub sebagai layanan *version control* memberikan keuntungan karena saya bisa mengetahui seluruh perubahan yang terjadi pada blog saya. Sebenarnya mudah saja untuk mengganti *theme* dengan lima langkah berikut:
 
@@ -28,7 +28,7 @@ Hanya saja, cara ini tidak hanya membuat saya kehilangan *version history* dari 
 
 Sebagai pengguna *Git* pemula, saya beruntung menemukan artikel dari [Enda](https://dev.to/craicoverflow/-how-to-change-the-theme-in-your-jekyll-application-k5j) dan sebuah jawaban dari [Daniel Pelsmaeker di Stackoverflow](https://stackoverflow.com/a/37186333) yang secara ringkas menjelaskan cara mengganti *theme* Jekyll di GitHub sekaligus secara tidak langsung mengajari saya tentang *branching*. Dengan menggunakan [Git Bash](https://git-scm.com/), ini tahapannya:
 
-{% include image url='/img/blog/2019/mengganti-theme-jekyll/nurandi-id-new.jpg' caption="Tampilan baru blog NURANDI.id dengan *theme* [Pixyll](https://github.com/johno/pixyll) yang lebih fresh :)" %}	
+{% include image url='/img/blog/2019-12-03-mengganti-theme-jekyll-pada-github/nurandi-id-new.jpg' caption="Tampilan baru blog NURANDI.id dengan *theme* [Pixyll](https://github.com/johno/pixyll) yang lebih fresh :)" %}	
 
 1. *Clone* repositori blog ke lokal
 
@@ -128,9 +128,9 @@ git pull upstream master
 Sesuaikan jika ada *conflict* . 
 	
 
-{% include image url='/img/blog/2019/mengganti-theme-jekyll/git-contributor.jpg' caption="Salah satu file dalam *theme*, terlihat banyak sekali kontributor yang terlibat" %}	
+{% include image url='/img/blog/2019-12-03-mengganti-theme-jekyll-pada-github/git-contributor.jpg' caption="Salah satu file dalam *theme*, terlihat banyak sekali kontributor yang terlibat" %}	
 
-{% include image url='/img/blog/2019/mengganti-theme-jekyll/git-history.jpg' caption="*History* perubahan dapat dilihat. Inilah kenapa saya membiasakan untuk menggunakan Git/GitHub" %}
+{% include image url='/img/blog/2019-12-03-mengganti-theme-jekyll-pada-github/git-history.jpg' caption="*History* perubahan dapat dilihat. Inilah kenapa saya membiasakan untuk menggunakan Git/GitHub" %}
 
 Semoga bermanfaat :)		
 	

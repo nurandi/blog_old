@@ -25,7 +25,7 @@ bangku universitas, kita bisa belajar secara online misalnya melalui
 Udacity, Coursera dan UDemy.
 
 {% capture fig_img %}
-[![How-to-become-a-data-scientist-Datacamp]({{ site.url }}{{ site.base_url }}/img/blog/menjadi-data-scientist/datacamp-How-to-become-a-data-scientist.jpg)](https://www.datacamp.com/community/tutorials/how-to-become-a-data-scientist)
+[![How-to-become-a-data-scientist-Datacamp]({{ site.url }}{{ site.base_url }}/img/blog/2015-05-13-langkah-mudah-menjadi-data-scientist/datacamp-How-to-become-a-data-scientist.jpg)](https://www.datacamp.com/community/tutorials/how-to-become-a-data-scientist)
 {% endcapture %}
 
 {% capture fig_caption %}

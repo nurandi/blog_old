@@ -27,7 +27,7 @@ sehingga waktu loading sangat cepat, mudah cara memasang dan
 menggunakannya, dan yang terpenting, prism.js mendukung banyak bahasa
 pemprograman termasuk R.
 
-![Prism.js]({{ site.url }}{{ site.baseurl }}/img/blog/syntax-prismjs/prism-js.png)
+![Prism.js]({{ site.url }}{{ site.baseurl }}/img/blog/2016-01-31-syntax-highlighter-dengan-prism-js-pada-wordpress/prism-js.png)
 
 Pada kesempatan kali ini, saya akan jelaskan langkah mudah untuk
 memasang syntax highlighter dengan prism.js pada Wordpress, yang
@@ -122,6 +122,6 @@ maka cukup tuliskan:
  
 Keduannya akan menghasilkan
 
-![Prism.js]({{ site.url }}{{ site.baseurl }}/img/blog/syntax-prismjs/prism-js-demo.png)
+![Prism.js]({{ site.url }}{{ site.baseurl }}/img/blog/2016-01-31-syntax-highlighter-dengan-prism-js-pada-wordpress/prism-js-demo.png)
 
 Mudah bukan? Selamat mencoba :)

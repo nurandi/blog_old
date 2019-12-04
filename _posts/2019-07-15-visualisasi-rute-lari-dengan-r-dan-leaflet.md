@@ -4,7 +4,7 @@ author: "Nur Andi Setiabudi"
 date: "July 5, 2019"
 layout: post
 published: yes
-share-img: /img/blog/2019/visualisasi-rute-lari-leaflet/strava-map.png
+share-img: /img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet/strava-map.png
 tags:
 - r
 - leaflet
@@ -33,7 +33,7 @@ Tidak pernah menggunakan aplikasi *tracking* atau tidak punya file GPX? Silakan 
 {% include base_path %}
 
 {% capture fig_img %}
-![Strava-map]({{ base_path }}/img/blog/2019/visualisasi-rute-lari-leaflet/strava-map.png)
+![Strava-map]({{ base_path }}/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet/strava-map.png)
 {% endcapture %}
 
 <figure>
@@ -346,14 +346,14 @@ Kita juga bisa mengubah *marker icon* dengan *icon* sesuai keinginan kita, misal
 **Note:** Seluruh file gambar yang akan digunakan saya simpan di Github *directory*
 
 ```
-https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019/visualisasi-rute-lari-leaflet
+https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet
 ```
 Agar penulisan *URL* dari tiap gambar yang digunakan menjadi lebih sederhana, saya membuat fungsi `img_url` berikut
 
 
 {% highlight r %}
 img_url <- function(file_name){
-  file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019/visualisasi-rute-lari-leaflet", file_name)
+  file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet", file_name)
 }
 {% endhighlight %}
 
@@ -497,7 +497,7 @@ picture_point <- picture_point[!is.na(picture_point$GPSLatitude), ]
 
 # membuat icon untuk titik start/finish/picture
 img_url <- function(file_name){
-    file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019/visualisasi-rute-lari-leaflet", file_name)
+    file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet", file_name)
 }
 
 start_icon <- makeIcon(
