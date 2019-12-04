@@ -1,9 +1,10 @@
+# https://github.com/dgrtwo/dgrtwo.github.com/blob/master/_scripts/knitpages.R
+# 2019-12-04
+
 #!/usr/bin/Rscript --vanilla
 
 # compiles all .Rmd files in _R directory into .md files in Pages directory,
 # if the input file is older than the output file.
-# source: https://github.com/dgrtwo/dgrtwo.github.com/blob/master/_scripts/knitpages.R
-# Jan 14, 2019
 
 # run ./knitpages.R to update all knitr files that need to be updated.
 
@@ -22,22 +23,20 @@ KnitPost <- function(input, outfile, figsfolder, cachefolder, base.url="/") {
     knit(input, outfile, envir = parent.frame())
 }
 
-knit_folder <- function(infolder, outfolder, figsfolder, cachefolder) {
+knit_folder <- function(infolder, outfolder, figsfolder, cachefolder, since) {
     for (infile in list.files(infolder, pattern = "*.Rmd", full.names = TRUE)) {
         pattern = "\\d\\d\\d\\d\\-\\d\\d\\-\\d\\d\\-"
-        print(infile)
         # folder = ifelse(grepl(pattern, infile), outfolder, "pages")
         outfile = paste0(outfolder, "/", sub(".Rmd$", ".md", basename(infile)))
         print(outfile)
         
         # knit only if the input file is the last one modified
-        if (!file.exists(outfile) |
-                file.info(infile)$mtime > file.info(outfile)$mtime) {
+        if ((!file.exists(outfile) | file.info(infile)$mtime > file.info(outfile)$mtime) & infile > paste0(infolder, "/", since)) {
+			print(infile)
             KnitPost(infile, outfile, figsfolder, cachefolder)
         }
     }
 }
 
-knit_folder("_Rmd", "_posts", "img/", "_caches/")
-#knit_folder("_R/drafts", "_drafts", "figs/drafts/")
+knit_folder("_Rmd", "_posts", "img/blog/", "_caches/", "2019-12-04")
 
