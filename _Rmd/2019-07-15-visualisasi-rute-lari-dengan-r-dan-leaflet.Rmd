@@ -4,7 +4,7 @@ author: "Nur Andi Setiabudi"
 date: "July 5, 2019"
 layout: post
 published: yes
-share-img: /img/blog/2019/visualisasi-rute-lari-leaflet/strava-map.png
+share-img: /img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet/strava-map.png
 tags:
 - r
 - leaflet
@@ -282,13 +282,13 @@ Kita juga bisa mengubah *marker icon* dengan *icon* sesuai keinginan kita, misal
 **Note:** Seluruh file gambar yang akan digunakan saya simpan di Github *directory*
 
 ```
-https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019/visualisasi-rute-lari-leaflet
+https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet
 ```
 Agar penulisan *URL* dari tiap gambar yang digunakan menjadi lebih sederhana, saya membuat fungsi `img_url` berikut
 
 ```{r}
 img_url <- function(file_name){
-  file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019/visualisasi-rute-lari-leaflet", file_name)
+  file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet", file_name)
 }
 ```
 
@@ -316,7 +316,7 @@ m <- m %>%
              group = "Start/Finish") 
 ```
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511101_680bd4802dbf4530963053478447be6a.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/556571_02992237a3e34f94a579f8fcdb503ee8.html" %}
 
 Cara yang sama bisa kita lakukan untuk menambahkan *marker* titik *finish*
 
@@ -335,7 +335,7 @@ m <- m %>%
 
 ```
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511102_c2ab7ffbee1f49d4b70fa978ffb473d7.html" %}
+{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/556570_6ed6450fa9a34c9c89bc731f7086e55c.html" %}
 
 
 **Langkah #6**. Membuat *markers* untuk foto pada titik koordinatnya. Caranya mirip dengan Langkah #5. Yang membedakan, jika sebelumnya *pop up* berupa teks **Start** dan **Finish** maka di sini kita gunakan HTML untuk menampilkan foto.
@@ -368,7 +368,7 @@ m <- m %>%
              group ='Pictures')
 ```
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511103_cca6b87edcd0408c8791cf6b00a2ac59.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/556572_15b456405a114aaead4d0e7aed54c121.html" %}
 
 Jika salah satu *marker* kita klik, foto akan muncul pada *pop up*.
 
@@ -387,7 +387,7 @@ m <- m %>%
                      options = layersControlOptions(collapsed = FALSE)) 
 ```
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511104_41e7f5e5969041479a616a4f00598af7.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/556573_0682aa10717340f7a09a36fa09a3da16.html" %}
 
 **Selesai!**
 
@@ -424,7 +424,7 @@ picture_point <- picture_point[!is.na(picture_point$GPSLatitude), ]
 
 # membuat icon untuk titik start/finish/picture
 img_url <- function(file_name){
-    file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019/visualisasi-rute-lari-leaflet", file_name)
+    file.path("https://raw.githubusercontent.com/nurandi/nurandi.github.io/master/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet", file_name)
 }
 
 start_icon <- makeIcon(

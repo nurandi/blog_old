@@ -19,7 +19,7 @@ Melalui artikel ini, saya akan membahas bagaimana melakukan *scraping* halaman *
 
 {% include base_path %}
 {% capture fig_img %}
-![BBC EPL Top Scorers]({{ base_path }}/img/blog/2019/web-scraping-r-rvest/bbc-epl-top-scorers.png)
+![BBC EPL Top Scorers]({{ base_path }}/img/blog/2019-11-05-web-scraping-dengan-r-dan-rvest/bbc-epl-top-scorers.png)
 {% endcapture %}
 
 <figure>
@@ -62,7 +62,7 @@ Selanjutnya, melalui browser kita identifikasi "letak" dari data yang akan kita 
 Caranya, buka URL *top-scorers* melalui browser (misal pada contoh ini saya menggunakan Google Chrome). Klik kanan, klik **Inspect** lalu klik tab **Element**. Klik icon tanda panah di bagian kiri-atas, lalu arahkan kursor pada teks/element yang akan kita ekstrak. Sebagai contoh untuk mengekstrak nama pemain, bisa arahkan kursor pada salah satu nama pemain.
 
 {% capture fig_img %}
-![Inspect element]({{ base_path }}/img/blog/2019/web-scraping-r-rvest/inspect-element.png)
+![Inspect element]({{ base_path }}/img/blog/2019-11-05-web-scraping-dengan-r-dan-rvest/inspect-element.png)
 {% endcapture %}
 
 <figure>

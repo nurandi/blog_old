@@ -4,7 +4,7 @@ author: "Nur Andi Setiabudi"
 date: "January 15, 2019"
 layout: post
 published: yes
-share-img: /img/blog/2019/rtweet-crawling-data-twitter/twitter-techgladscom.png
+share-img: /img/blog/2019-01-15-rtweet-crawling-data-twitter-menggunakan-r/twitter-techgladscom.png
 status: publish
 tags:
 - r
@@ -16,7 +16,7 @@ type: post
 
 Sekitar empat tahun lalu, saya menulis artikel dengan judul yang hampir sama persis: [twitteR: Crawling Data Twitter Menggunakan R](https://www.nurandi.id/blog/crawling-data-twitter-menggunakan-r/). Pada saat itu, cara paling mudah untuk mendapatkan *(crawling)* data dari Twitter dengan R adalah menggunakan *package* [**twitteR**](https://cran.r-project.org/web/packages/twitteR/). Sayangnya pada pertengahan 2016, [Jeff Gentry](https://github.com/geoffjentry/twitteR), sang pengembang, menghentikan pengembangan dan *update/maintenance* terhadap *package* tersebut. Meskipun *package* **twitteR** masih bisa digunakan (setidaknya sampai saat ini), Mr. Jeff merekomendasikan untuk beralih menggunakan *package* lain yang tidak kalah kerennya, yaitu [**rtweet**](https://cran.r-project.org/web/packages/rtweet/index.html). 
 
-{% include image url="/img/blog/2019/rtweet-crawling-data-twitter/twitter-techgladscom.png" alt="twitter-techgladscom.png" caption="Twitter. Kredit: techglads.com" %}
+{% include image url="/img/blog/2019-07-15-visualisasi-rute-lari-dengan-r-dan-leaflet/twitter-techgladscom.png" alt="twitter-techgladscom.png" caption="Twitter. Kredit: techglads.com" %}
 
 [**rtweet**](https://rtweet.info) dikembangkan oleh [Michael W. Kearney](https://github.com/mkearney). Versi pertama dirilis pada Agustus 2018, atau hampir bersamaan dengan pengumuman penghentian pengembangan **twitteR**. Sesuai dengan deskripsinya, **rtweet** berfungsi untuk mengakses API Twitter melalui R. Jika **twitteR** hanya mampu digunakan untuk berinteraksi dengan REST API (untuk mencari "data" historis atau yang sudah lampau), **rtweet** ini bisa juga digunakan untuk mengakses stream API *(live/realtime)*. Pada artikel ini kita bahas untuk REST API dulu ya.
 
@@ -56,7 +56,7 @@ Pelajari lebih lengkap tentang instalasi *package* R melalui artikel [Menginstal
 
 Untuk mengakses API Twitter diperlukan akun Twitter, aplikasi *(application)* dan token akses *(access token)*. Silakan pelajari langkah-langkah membuat aplikasi dan mendapatkan token akses pada artikel [Twitter Authentication dengan R](https://www.nurandi.id/blog/twitter-authentication-dengan-r/). 
 
-{% include image url="/img/blog/2019/rtweet-crawling-data-twitter/ilustrasi-app-token.png" alt="ilustrasi-app-token.png" caption="Ilustrasi Twitter App yang menampilkan keys dan tokens" %}
+{% include image url="/img/blog/2019-01-15-rtweet-crawling-data-twitter-menggunakan-r/ilustrasi-app-token.png" alt="ilustrasi-app-token.png" caption="Ilustrasi Twitter App yang menampilkan keys dan tokens" %}
 
 **Note:** Pada Juli 2018, Twitter [mengubah kebijakan](https://blog.twitter.com/developer/en_us/topics/tools/2018/new-developer-requirements-to-protect-our-platform.html) terkait registrasi aplikasi baru. Kini, untuk membuat aplikasi harus menggunakan *developer account*. Saat melakukan registrasi, Twitter meminta kita untuk menjelaskan secara lebih detail hal-hal terkait dengan aplikasi. Selanjutnya Twitter akan meninjau, apakah aplikasi disetujui atau tidak. Kabar baiknya, aplikasi-aplikai yang didaftarkan sebelum diterapkannya kebijakan baru ini masih bisa digunakan. *Setidaknya sampai hari ini*. Info selengkapnya [di sini](https://blog.twitter.com/developer/en_us/topics/tools/2018/new-developer-requirements-to-protect-our-platform.html).
 
@@ -120,7 +120,7 @@ Setelah proses otentikasi berhasil, kita siap untuk "menambang" data *(crawling)
 
 Mencari *tweet* yang memuat kata kunci tertentu. Secara *default*, dalam sekali dijalankan akan memberikan **MAKSIMAL** 18.000 *tweets*, yang merupakan sampel dari historis **tujuh hari terakhir**. Bagaimana kalau ingin lebih dari 18 ribu atau lebih dari tujuh hari? Salah satu caranya dengan membuat akun *premium* atau *entreprise*. Lebih lengkap tentang ketentuan ini bisa dibaca di [sini](https://developer.twitter.com/en/docs/tweets/search/overview).
 
-{% include image url="/img/blog/2019/rtweet-crawling-data-twitter/search-tweet.png" alt="search-tweet.png" caption="Ilustrasi search pada Twitter" %}
+{% include image url="/img/blog/2019-01-15-rtweet-crawling-data-twitter-menggunakan-r/search-tweet.png" alt="search-tweet.png" caption="Ilustrasi search pada Twitter" %}
 
 **Contoh**: mencari (hingga) 1.000 *tweets* yang memuat kata kunci [**"pengaturan skor"**](https://twitter.com/search?l=&q=pengaturan%20skor&src=typd&lang=en)
 
