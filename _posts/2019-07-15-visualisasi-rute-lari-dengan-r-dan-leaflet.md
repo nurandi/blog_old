@@ -47,7 +47,7 @@ Tidak pernah menggunakan aplikasi *tracking* atau tidak punya file GPX? Silakan 
 
 Ada tiga *packages* yang akan digunakan, yaitu:
 
-+ **plotKLM** untuk membaca file GPX. Alternatif lain adalah *package* **XML** dan **maptools**.
++ **plotKML** untuk membaca file GPX. Alternatif lain adalah *package* **XML** dan **maptools**.
 + **exifr** untuk membaca *exif (exchangeable image format)* atau metadata dari *image*, dalam hal ini kita akan membaca titik koordinat *(latitude-longitude)* di mana sebuah foto diambil.
 + **leaflet** untuk membuat peta.
 
@@ -55,10 +55,10 @@ Jika *package(s)* tersebut belum terinstal pada R, silakan instal terlebih dahul
 
 
 {% highlight r %}
-install.packages(c("plotKLM", "exifr", "leaflet"))
+install.packages(c("plotKML", "exifr", "leaflet"))
 {% endhighlight %}
 
-Khusus **leaflet**, bisa juga instal versi *development*-nya dari [Github](https://github.com/rstudio/leaflet).
+Khusus **leaflet**, bisa juga instal versi *development*-nya dari [Github](https://github.com/rstudio/leaflet). **exifr** berjalan dengan di atas **Perl**. Silakan instal [salah satu aplikasi Perl](https://www.perl.org/get.html) agar **exifr** dapat berfungsi sebagaimana mestinya. 
 
 
 {% highlight r %}
@@ -384,7 +384,7 @@ m <- m %>%
              group = "Start/Finish") 
 {% endhighlight %}
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511101_680bd4802dbf4530963053478447be6a.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/556571_02992237a3e34f94a579f8fcdb503ee8.html" %}
 
 Cara yang sama bisa kita lakukan untuk menambahkan *marker* titik *finish*
 
@@ -403,7 +403,7 @@ m <- m %>%
              group = "Start/Finish")
 {% endhighlight %}
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511102_c2ab7ffbee1f49d4b70fa978ffb473d7.html" %}
+{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/556570_6ed6450fa9a34c9c89bc731f7086e55c.html" %}
 
 
 **Langkah #6**. Membuat *markers* untuk foto pada titik koordinatnya. Caranya mirip dengan Langkah #5. Yang membedakan, jika sebelumnya *pop up* berupa teks **Start** dan **Finish** maka di sini kita gunakan HTML untuk menampilkan foto.
@@ -439,7 +439,7 @@ m <- m %>%
              group ='Pictures')
 {% endhighlight %}
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511103_cca6b87edcd0408c8791cf6b00a2ac59.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/556572_15b456405a114aaead4d0e7aed54c121.html" %}
 
 Jika salah satu *marker* kita klik, foto akan muncul pada *pop up*.
 
@@ -459,7 +459,7 @@ m <- m %>%
                      options = layersControlOptions(collapsed = FALSE)) 
 {% endhighlight %}
 
-{% include iframe.html url="https://rstudio-pubs-static.s3.amazonaws.com/511104_41e7f5e5969041479a616a4f00598af7.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/556573_0682aa10717340f7a09a36fa09a3da16.html" %}
 
 **Selesai!**
 
@@ -470,7 +470,7 @@ Jika digabungkan, maka inilah kode lengkap untuk menampilkan rute lari beserta f
 
 {% highlight r %}
 # install package(s) yg diperlukan
-install.packages(c("plotKLM", "exifr", "leaflet"))
+install.packages(c("plotKML", "exifr", "leaflet"))
 
 # load package(s)
 library(plotKML)
