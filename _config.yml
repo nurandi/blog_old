@@ -143,3 +143,10 @@ exclude:
   - vendor
   
 permalink: /blog/:title/
+
+# Latex rendering using KATex
+
+markdown: kramdown
+kramdown:
+   math_engine: mathjax
+ 
