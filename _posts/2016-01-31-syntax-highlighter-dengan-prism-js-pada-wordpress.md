@@ -111,7 +111,7 @@ FROM Orders;
 ```
 
 Atau, jika Wordpress kita sudah support
-[Markdown](https://nurandi.net/blogging/format-teks-dengan-markdown/),
+[Markdown](https://nurandi.id/blog/format-teks-dengan-markdown/),
 maka cukup tuliskan:
 
     ```.language-sql

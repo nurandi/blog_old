@@ -71,7 +71,7 @@ library(twitteR)
 
 Lebih lengkap tentang bagaimana menginstall *package* `twitteR` dapat
 dilihat pada [artikel
-ini](http://nurandi.net/socmed/twitter-authentication-dengan-r/).
+ini](http://nurandi.id/blog/twitter-authentication-dengan-r/).
 
 ## Twitter authentication
 

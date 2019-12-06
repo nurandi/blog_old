@@ -73,7 +73,7 @@ memanggil fungsi) terhadap paket lain. Tentu saja paket lain tersebut
 harus kita instal. Dengan menambahkan opsi `dependencies = TRUE` pada
 fungsi `install.packages()` maka R akan menginstal semua paket yang
 dibutuhkan. (**KOREKSI** dari [Mas Suharto pada comment di
-bawah](http://nurandi.net/blog/menginstal-r-package/#comment1), bahwa
+bawah](http://nurandi.id/blog/menginstal-r-package/#comment1), bahwa
 *"Secara default, tanpa* `dependencies=TRUE`*,* `install.packages` *juga
 meng-install paket lain yang dibutuhkan. Namun, paket yang termasuk
 “Suggests” (artinya paket itu digunakan, tetapi tanpa paket itu pun bisa

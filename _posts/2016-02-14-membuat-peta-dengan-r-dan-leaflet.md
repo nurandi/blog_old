@@ -40,7 +40,7 @@ pengetahuan tentang JavaScript. Tertarik untuk mencoba? Inilah hasil
 Sebenarnya dengan [*R*](https://www.r-project.org/) saja cukup,
 namun saya merekomendasikan
 [RStudio](https://www.rstudio.com/products/rstudio/).
-[Instal](https://nurandi.net/r/menginstal-r-package/) *package
+[Instal](https://nurandi.id/blog/menginstal-r-package/) *package
 **leaflet*** dari CRAN:
 
 ```r
@@ -119,7 +119,7 @@ dieksplorasi seperti yang akan kita lakukan sekarang.
 
 Dimulai dengan [men-*download* tweets berdasarkan kata kunci tertentu
 menggunakan
-**twitteR**](https://nurandi.net/socmed/crawling-data-twitter-menggunakan-r/)
+**twitteR**](https://nurandi.id/blog/crawling-data-twitter-menggunakan-r/)
 :
 
 ```r

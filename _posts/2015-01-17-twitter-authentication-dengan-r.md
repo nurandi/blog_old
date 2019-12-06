@@ -74,7 +74,7 @@ library(twitteR)
 
 Panduan lebih lengkap tentang bagaimana menginstal *R package* bisa
 dilihat pada artikel [Menginstal R
-Package](http://nurandi.net/r/menginstal-r-package/).
+Package](http://nurandi.id/blog/menginstal-r-package/).
 
 ## Twitter Authentication dengan R
 

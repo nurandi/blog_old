@@ -13,7 +13,7 @@ redirect_from:
 - /r/mengelola-r-package/
 - /2015/01/24/mengelola-r-package/
 ---
-Pada artikel [sebelumnya](http://nurandi.net/r/menginstal-r-package/)
+Pada artikel [sebelumnya](http://nurandi.id/blog/menginstal-r-package/)
 kita telah berdiskusi tentang fungsi-fungsi yang dapat digunakan untuk
 instal R *package*, baik instal dari dari file lokal menggunakan
 *wizard*, instal otomatis dari repositori CRAN dengan fungsi

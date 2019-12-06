@@ -30,7 +30,7 @@ Pada R, *Twitter authentication* dapat dilakukan dengan mudah dengan
 menggunakan fungsi `setup_twitter_oauth()` yang tersedia pada *package*
 [**twitteR**](https://github.com/geoffjentry/twitteR) seperti telah kita
 diskusikan pada [artikel
-sebelumnya](https://nurandi.net/socmed/twitter-authentication-dengan-r/).
+sebelumnya](https://nurandi.id/blog/twitter-authentication-dengan-r/).
 Pada kesempatan ini, saya lebih tertarik untuk membahas proses
 autentikasi secara **"semi-manual"** dengan menggunakan *package*
 [**ROAuth**](https://cran.r-project.org/package=ROAuth) dan
@@ -79,7 +79,7 @@ Setiap *request* ke API Twitter membutuhkan "sepaket" *credentials* yang
 terdiri dari *consumer key (API key)*, *consumer secret (API secret)*,
 serta *access token* dan *access token secret*. *Credentials* tersebut
 bisa dipoleh dengan cara [mendaftarkan sebuah
-aplikasi](https://nurandi.net/socmed/twitter-authentication-dengan-r/)
+aplikasi](https://nurandi.id/blog/twitter-authentication-dengan-r/)
 melalui [apps.twitter.com](https://apps.twitter.com/). Pastikan
 *Callback URL* pada [Application Management -
 Settings](https://apps.twitter.com/) dikosongkan. Setelah mendaftarkan
@@ -284,7 +284,7 @@ berikut.
 [**UPDATE\#2:**] *Twitter token* yang di-*generate* baik
 oleh `httr::Token1.0` maupun `httr::oauth1.0_token` dapat digunakan
 sebagai pengganti fungsi `setup_twitter_oauth()` pada *package*
-[**twitteR**](http://nurandi.net/socmed/crawling-data-twitter-menggunakan-r/).
+[**twitteR**](http://nurandi.id/blog/crawling-data-twitter-menggunakan-r/).
 
 ```r
 assign("oauth_token", twitter_token)

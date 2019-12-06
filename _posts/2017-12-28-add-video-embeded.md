@@ -28,4 +28,4 @@ dengan memanfaatkan [Leaflet](http://leafletjs.com/), salah satu
 Sebenarnya dengan [*R*](https://www.r-project.org/) saja cukup,
 namun saya merekomendasikan
 [RStudio](https://www.rstudio.com/products/rstudio/).
-[Instal](https://nurandi.net/r/menginstal-r-package/) *package
+[Instal](https://nurandi.id/blog/menginstal-r-package/) *package
