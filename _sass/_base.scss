@@ -92,9 +92,50 @@ div.social-icons-footer a {
 }
 
 .site-header {
-	color: $light-gray !important;
-	text-shadow: none !important;
+	color: $light-gray;
 }
+
+
+
+/* archive tag */
+
+ul.tag-list{
+	list-style-type:none;
+	padding-left:0;
+	overflow: hidden;
+}
+
+li.tag-button {
+	float: left;
+	margin-right: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.post li.tag-button {
+	float: left;
+	margin-right: 0.3em;
+}
+
+.tag-term a:link {
+	color: $light-gray;
+	background-color: $dark-gray;
+	background-image: none;
+}
+
+.tag-term a:hover {
+	background-image: none;
+}
+
+.tag-term a:hover, .tag-count, .post-tag-term a:link {
+	color: $dark-gray;
+	background: $light-gray;
+}
+
+.tag-term a:link, .tag-term a:hover, .tag-count {
+	padding: 0.4em;
+}
+
 
 
 	
