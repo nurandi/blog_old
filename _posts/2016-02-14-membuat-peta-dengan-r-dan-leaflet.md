@@ -79,7 +79,7 @@ map
 ```
 
 
-{% include iframe.html url="/src/leaflet-map-bundaran-HI.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/557067_1b954d2a081e41c09cde4f3edb57eb21.html" %}
 
 
 Penjelasannya kurang lebih:
@@ -163,7 +163,9 @@ tweetsmap <- leaflet(data = tweets) %>%
 tweetsmap
 ```
 
-{% include iframe.html url="/src/leaflet-map-tweets.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/557075_7c48a041dab24dcda637d65e1b980801.html" %}
+
+(Hanya 100 twit pertama yg ditampilkan agar *loading* tidak terlalu lama)
 
 ***Nice!*** Seluruh titik koordinat sudah kita tampilkan dalam peta
 hanya dengan empat baris kode R. Mudah, bukan?
@@ -214,7 +216,7 @@ eksplisit, `addMarker()` akan mencari kolom `lat/latitude` dan
 Ini adalah hasil akhir yang kita peroleh. *Klik pada titik cluster untuk
 memperbesar peta!*
 
-{% include iframe.html url="/src/leaflet-map-tweets-cluster.html" %}
+{% include iframe.html url="http://rstudio-pubs-static.s3.amazonaws.com/557072_f157a8eea78d498299399ad13db43164.html" %}
 
 Kurang canggih? Masih ada fitur-fitur **leaflet** yang lain untuk kita
 eksplorasi seperti mengganti *map tiles*, modifikasi *markers* dan *pop
