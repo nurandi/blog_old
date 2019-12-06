@@ -10,6 +10,7 @@ tags:
 - R
 - twitter
 - data-viz
+- leaflet
 author: Nur Andi Setiabudi
 excerpt: Membuat peta dengan R dapat dilakukan dengan mudah menggunakan package leaflet.
   Leaflet memudahkan menghasilkan sebuah peta interaktif
