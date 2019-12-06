@@ -8,7 +8,7 @@ url:         "https://www.nurandi.id"
 date_format: "%-d %b %Y"
 
 header_pages:
- - pages/blog.md
+ - pages/tags.html
 
 # Google services
 google_verification:
@@ -74,7 +74,7 @@ vk_id:
 strava_athlete_id: nurandi
 
 # Post sharing icons
-show_sharing_icons: true
+show_sharing_icons: false
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true
