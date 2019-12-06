@@ -10,10 +10,10 @@ tags:
 - leaflet
 - strava
 - rute
-- mapping
-- visualisasi
-- lari
+- gis
+- data-viz
 - running
+- marathon
 type: post
 excerpt: Membuat peta interaktif dapat dilakukukan dengan mudah menggunakan R dan leaflet. Artikel ini menjelaskan tahapan membuat visualisasi rute lari yang direkam menggunakan perangkat atau aplikasi GPS seperti Garmin, Strava atau aplikasi sport tracker lainnya, dengan menggununakan R dan package leaflet.
 ---
