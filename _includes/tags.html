@@ -1,0 +1,10 @@
+<ul class="tag-list">
+	<li class="tag-button">
+	<span class="fas fa-tag"></span>
+	<li class="tag-button">
+	  {% for tag in page.tags %}
+		  <li class="tag-button">
+			<span class="tag-term"><a href="{{ site.url }}/tags/#{{ tag | downcase | slugify }}" class="tag-linkbtn">{{ tag | downcase }}</a>
+		  </li>
+	  {% endfor %}
+</ul>
