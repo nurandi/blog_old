@@ -16,7 +16,7 @@ redirect_from:
 ---
 Menyambung diskusi kita tentang bagaimana [*crawling* data Twitter
 menggunakan package `twitteR` pada
-R](http://nurandi.net/socmed/crawling-data-twitter-menggunakan-r/), kali
+R](https://nurandi.id/blog/crawling-data-twitter-menggunakan-r/), kali
 ini mari kita bahas bagaimana mengolah data tersebut. *Raw-data* yang
 diperoleh dari hasil *crawling* sebagian besar berupa *list*.
 `searchTwitter()` dan `userTimeline()` menghasilkan *list* dari objek
