@@ -117,7 +117,7 @@ li.tag-button {
 	margin-right: 0.3em;
 }
 
-.tag-term a:link a:visited {
+.tag-term a:link, .tag-term a:visited {
 	color: $light-gray;
 	background-color: $dark-gray;
 	background-image: none;
@@ -127,7 +127,7 @@ li.tag-button {
 	background-image: none;
 }
 
-.tag-term a:hover, .tag-count, .post-tag-term a:link {
+.tag-term a:hover, .tag-count {
 	color: $dark-gray;
 	background: $light-gray;
 }
