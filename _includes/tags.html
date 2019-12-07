@@ -1,10 +1,13 @@
 <ul class="tag-list">
-	<li class="tag-button">
-	<span class="fas fa-tag"></span>
-	<li class="tag-button">
+	<li class="tag-button tag-icon">
+		<span class="fas fa-tag"></span>
+	</li>
 	  {% for tag in page.tags %}
 		  <li class="tag-button">
 			<span class="tag-term"><a href="{{ site.url }}/tags/#{{ tag | downcase | slugify }}" class="tag-linkbtn">{{ tag | downcase }}</a>
 		  </li>
 	  {% endfor %}
+	<li class="tag-button tag-year">
+		<span class="tag-term"><a href="{{ site.url }}/archives/#{{ page.date | date: "%Y" }}" class="tag-linkbtn">{{ page.date | date: "%Y" }}</a>
+	</li>
 </ul>
