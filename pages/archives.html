@@ -9,6 +9,30 @@ redirect_from:
 
 <h1 class="h2" id="title">{{ page.long_title }}</h1>
 
+{% comment %}
+<!--
+post counter by year:
+https://stackoverflow.com/a/28157613
+-->
+{% endcomment %}
+
+<ul class="tag-list">
+{% assign count = 0 %}
+{% for post in site.posts %}
+  {% assign thisyear = post.date | date: "%Y" %}
+  {% assign prevyear = post.previous.date | date: "%Y" %}
+  {% assign count = count | plus: 1 %}
+  {% if thisyear != prevyear %}
+	  <li class="tag-button">
+        <span class="tag-term"><a href="#{{ post.date | date:"%Y" }}" class="tag-linkbtn">{{ thisyear }}</a></span><span class="tag-count">{{ count }}</span>
+      </li>
+    {% assign count = 0 %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+<hr style="margin-bottom:20px">
+
 <!-- posts list for each year -->
 <section class="post-list">
 
