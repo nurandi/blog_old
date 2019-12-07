@@ -16,7 +16,7 @@ redirect_from:
        {% assign currentDate = post.date | date: "%Y" %}
        {% if currentDate != myDate %}
            {% unless forloop.first %}</ul>{% endunless %}
-           <h1 class="h2">{{ currentDate }}  <small><a class="fas fa-chevron-circle-up" href="#title" title="Back to top" style="background-image:none"></a></small></h1>
+           <h1 class="h2" id="{{ currentDate }}">{{ currentDate }}  <small><a class="fas fa-chevron-circle-up" href="#title" title="Back to top" style="background-image:none"></a></small></h1>
            <ul>
            {% assign myDate = currentDate %}
        {% endif %}
