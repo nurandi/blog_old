@@ -9,6 +9,7 @@ date_format: "%-d %b %Y"
 
 header_pages:
  - pages/tags.html
+ - pages/archives.html
 
 # Google services
 google_verification:
@@ -133,7 +134,7 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-# https://github.com/jekyll/jekyll/issues/2938
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
