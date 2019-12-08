@@ -6,7 +6,7 @@ long_title: Biografi
 author_profile: true
 ---
 
-<h1 class="h2">{{ page.long_title }}</h1>
+<h1 class="h2" style="margin-bottom:1em;">{{ page.long_title }}</h1>
 
 <img src="/img/avatar.png" style="width:170px;height:170px; float:right; margin:1em;">
 [Nur Andi Setiabudi](/) adalah seorang *data-driven enthusiast*. Ia percaya bahwa data selalu mempunyai peran tersendiri dalam pengambilan keputusan dan penyelesaian berbagai masalah. Ia menemukan *passion*-nya di bidang data terutama yang berkaitan dengan statistika, *data analysis*, *data engineering* dan *R programming*.
