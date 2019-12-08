@@ -8,6 +8,7 @@ url:         "https://www.nurandi.id"
 date_format: "%-d %b %Y"
 
 header_pages:
+ - pages/about.md
  - pages/tags.html
  - pages/archives.html
 
