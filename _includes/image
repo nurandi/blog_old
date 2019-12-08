@@ -4,9 +4,9 @@
 
 <figure class="image">
 {% if url1 == "/" %}
-<img src="{{ base_path }}{{ include.url }}" alt="{{ include.alt }}" />
+	<img src="{{ base_path }}{{ include.url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} />
 {% else %}
-<img src="{{ include.url }}" alt="{{ include.alt }}" />
+	<img src="{{ include.url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} />
 {% endif %}
-<span class="caption" markdown="1">{{ include.caption }}</span>
+{% if include.caption %}<span class="caption" markdown="1">{{ include.caption }}</span>{% endif %}
 </figure>
