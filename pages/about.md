@@ -86,10 +86,10 @@ Melalui blog [NURANDi.id](/), ia berbagi pemikiran, pengetahuan dan pengalaman y
 * Commitee of Practice for Big Data Analytics. Telkom Indonesia Regional 7. Makassar, Juni 2016.
 * Commitee of Practice for Big Data Analytics. Telkom Indonesia Regional 3. Bandung, Juni 2016.
 * Introduction to R for Data Exploration and Preparation. Data Science Indonesia Bootcamp. Jakarta, Maret 2016.
-* Training IBM SPSS Modeler and Tableau. Telkom Indonesia Regional 4, Semarang, Oktober 2015.
-* Short Training IBM SPSS Modeler. Admedika, Jakarta, Maret 2015.
+* Training IBM SPSS Modeler and Tableau. Telkom Indonesia Regional 4. Semarang, Oktober 2015.
+* Short Training IBM SPSS Modeler. Admedika. Jakarta, Maret 2015.
 * Data Mining Using IBM SPSS Modeler 15.x Training (by Purple Analytic). BFI Finance. Tangerang, Maret 2013.
-* Data Mining Using IBM SPSS Modeler 14.x Training (by Purple Analytic). Telkomsel, Bandung, November 2012.
+* Data Mining Using IBM SPSS Modeler 14.x Training (by Purple Analytic). Telkomsel. Bandung, November 2012.
 * Data Mining Using IBM SPSS Modeler 14.x Training (by Purple Analytic). Bank Rakyat Indonesia. Jakarta, September 2012. 
 * Data Mining Using IBM SPSS Modeler 14.x Training (by Purple Analytic). Bank Central Asia. Maret 2012.
 * SAS Statistics I Introduction to ANOVA, Regression, and Logistic Regression
