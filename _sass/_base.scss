@@ -154,7 +154,7 @@ li.contact-socmed {
 padding-right: 0.5em;
 }
 
-.contact-socmed a:link a:visited {
+.contact-socmed a:link, .contact-socmed a:visited {
 	color: $light-gray;
 	background-color: $dark-gray;
 	background-image: none;
