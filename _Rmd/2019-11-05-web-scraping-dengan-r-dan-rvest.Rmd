@@ -14,7 +14,12 @@ excerpt: Tutorial web scraping menggunakan R dan package rvest dengan contoh kas
 ---
 Di era digital sekarang ini, berbagai data dapat ditemukan dengan mudah di internet. Sebagai seorang data analis dan *scientist*, hal ini tentu menjadi kabar baik karena dapat meningkatkan kualitas model dan mempertajam hasil analisis. Tapi bagaimana jika data tersebut tersedia dalam *website* yang diperuntukan untuk dibaca melalui *browser*? Beberapa *website*  memang menyediakan fasilitas untuk menyimpan data (seperti Twitter melalui *API public*), tapi sayangnya sebagian besar tidak. Salah satu cara yang umum dilakukan adalah dengan membuka satu-per-satu halaman web lalu *"copy-paste"* data secara manual - tentunya akan menyita banyak waktu jika data sangat banyak. *Web scraping* adalah teknik yang lebih "smart" untuk otomatisasi proses *copy-paste* ini. Selain agar lebih efisien, tujuan utama dari *web scraping* sebenarnya adalah memanfaatkan struktur atau pola dari suatu laman web untuk mengekstrak dan menyimpan data dalam format yang diinginkan untuk dianalisis lebih lanjut.
 
-Melalui artikel ini, saya akan membahas bagaimana melakukan *scraping* halaman *web* menggunakan R dan *package* **rvest**. Agar lebih menarik, saya menggunakan contoh *real* berupa data *top-scorers* Liga Inggris dari halaman [BBC Sport](https://www.bbc.com/sport/football/premier-league/top-scorers).
+Secara teknis, ada beberapa pendekatan untuk melakukan *web scraping*, diantaranya:
+1. Parsing HTML dari suatu laman web menggunakan *CSS selector*. Merupakan cara yang umum digunakan dan biasanya dapat dilakukan untuk banyak *website*.
+2. Schema *JSON linked data* dan *JavaScript variable*. 
+3. XHR *(XML HTTP Requests)*
+
+Melalui artikel ini mari kita pelajari yang pertama: *scraping* dengan cara parsing HTML dari suatu laman HTML. *Tools* yang akan digunakan adalah R dengan *package* **rvest**. Agar lebih menarik, saya menggunakan contoh *real* berupa data *top-scorers* Liga Inggris dari halaman [BBC Sport](https://www.bbc.com/sport/football/premier-league/top-scorers).
 
 
 {% include base_path %}
@@ -42,7 +47,7 @@ library(rvest)
 
 Proses *scraping* kita mulai dengan membaca file HTML dari halaman website dengan menggunakan fungsi `read_html`.
 
-```{r}
+```{r eval=FALSE}
 url <- "https://www.bbc.com/sport/football/premier-league/top-scorers"
 html <- read_html(url)
 ```
@@ -79,7 +84,7 @@ Yang kita perlukan adalah *CSS selectors* atau XPath dari *element* tersebut. *C
 
 Kembali ke R. Setelah mengetahui *selector*-nya, kita bisa mengekstrak informasi nama pemain dengan fungsi `html_nodes` (jika hanya satu pemain saja bisa menggunakan `html_node`) dan `html_text` untuk mengambil teksnya. Parameter `trim = TRUE` berguna untuk menghilangkan *space* sebelum/setelah teks.
 
-```{r}
+```{r eval=FALSE}
 html %>% 
     html_nodes(".top-player-stats__name") %>% 
     html_text(trim = TRUE)
@@ -87,7 +92,7 @@ html %>%
 
 Dengan cara seperti di atas, kita bisa mengekstrak nama team dengan *selector* `.top-player-stats__team`
 
-```{r}
+```{r eval=FALSE}
 html %>% 
     html_nodes(".top-player-stats__team") %>% 
     html_text(trim = TRUE)
@@ -97,7 +102,7 @@ html %>%
 
 Karena proses ekstraksi data merupakan pengulangan (dengan mengganti *CSS selector*), sangat disarankan untuk dibuat sebagai fungsi.
 
-```{r}
+```{r eval=FALSE}
 scrape <- function(selector, html){
     html %>% 
         html_nodes(selector) %>% 
@@ -107,13 +112,13 @@ scrape <- function(selector, html){
 
 Sehingga untuk mendapatkan *total goals scored* cukup dengan perintah
 
-```{r}
+```{r eval=FALSE}
 scrape(".top-player-stats__goals-scored-number", html)
 ```
 
 Selanjutnya kita iterasi fungsi `scrape` untuk seluruh *selector*. Iterasi bisa menggunakan fungsi `sapply`/`lapply`.
 
-```{r}
+```{r eval=FALSE}
 selector <- c(".top-player-stats__name",
               ".top-player-stats__team",
               ".top-player-stats__goals-scored-number",
@@ -130,7 +135,7 @@ str(top_scorers)
 
 Clean up! Proses *scraping* sudah selesai dan hasilnya disimpan dalam matriks `top-scorers`. Matriks tersebut dapat kita ubah menjadi *data frame* dan beri nama yang tepat untuk setiap kolom.
 
-```{r}
+```{r eval=FALSE}
 top_scorers <- as.data.frame(top_scorers)
 
 col_names <- c("name",
@@ -163,7 +168,9 @@ Sebagai catatan tambahan terkait dengan *web scraping*:
 * Jika tersedia, gunakan API *(applicaton program interface)* dan hindari *scraping*.
 * Seperti telah saya sampaikan sebelumnya, lakukan *scraping* dengan penuh "etika". Jangan sampai membebani website.
 
-Selamat menambang data! Semoga bermanfaat.
+Selamat menambang data! Semoga bermanfaat. 
+
+Pendekatan *scraping* lainnya akan kita pelajari pada artikel terpisah.
 
 
 
