@@ -65,6 +65,7 @@ Melalui blog [NURANDi.id](/), ia berbagi pemikiran, pengetahuan dan pengalaman y
 
 <h1 class="h2">Sertifikasi</h1>
 
+* [Agile Certified Hijah Coach](https://drive.google.com/file/d/11LmOo9phf3uFIQ5bP4mvPo3AGbPZtgb4/view?usp=sharing). Telkom Indonesia and Hijarh Coach. November 2020 
 * [*Cloudera Certified Associate Data Analyst (CCA159)*](https://drive.google.com/file/d/0B3vbdHo0ASVnUUV6OC1LRFRvYnJtRDRLZFAyLVpaWmgwTkU4/view?usp=sharing). Cloudera. 2017. (License ID: 100-019-592)
 
 <h1 class="h2">Software</h1>
