@@ -82,11 +82,11 @@ Melalui blog [NURANDi.id](/), ia berbagi pemikiran, pengetahuan dan pengalaman y
 
 <h1 class="h2">Training/Course - <i>Trainer</i></h1>
 
-* Clustering (Course Review). Telkom Athon Batch 2 - Telkom Indonesia. Agustus 2021
-* Foundation of Data Science (Introduction, Statistics, SQL, Basic Machine Learning) Batch 2. Komunitas Telco-Indonesia. Juli-Agustus 2021
+* Clustering with Python (Course Review). Telkom Athon Batch 2 - Telkom Indonesia. Agustus 2021
+* Foundation of Data Science (Introduction, Statistics, SQL, Basic Machine Learning using Python) Batch 2. Komunitas Telco-Indonesia. Juli-Agustus 2021
 * Basic Statistics for Data Science Using Python (Course Review). Telkom Athon Batch 2 - Telkom Indonesia. Juli 2021
-* Foundation of Data Science (Introduction, Statistics, SQL, Basic Machine Learning). Komunitas Telco-Indonesia. Desember 2020
-* Machine Learning: Classification. Telkom Athon Batch 1 - Telkom Indonesia. November 2020
+* Foundation of Data Science (Introduction, Statistics, SQL, Basic Machine Learning using Python). Komunitas Telco-Indonesia. Desember 2020
+* Machine Learning with Python: Classification. Telkom Athon Batch 1 - Telkom Indonesia. November 2020
 * Foundation of Statistics for Data Science (Webinar). Telkom Indonesia Corporate University. Oktober 2020
 * R Programming Preparation Class. BODTCamp BCA, IYKRA. Jakarta, Januari 2018.
 * Big Data Training (with R). Telkom Indonesia Regional 7. Makassar, April 2017.
