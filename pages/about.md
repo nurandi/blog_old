@@ -99,11 +99,9 @@ Melalui blog [NURANDi.id](/), ia berbagi pemikiran, pengetahuan dan pengalaman y
 * Data Mining Using IBM SPSS Modeler 14.x Training (by Purple Analytic). Telkomsel. Bandung, November 2012.
 * Data Mining Using IBM SPSS Modeler 14.x Training (by Purple Analytic). Bank Rakyat Indonesia. Jakarta, September 2012. 
 * Data Mining Using IBM SPSS Modeler 14.x Training (by Purple Analytic). Bank Central Asia. Maret 2012.
-* SAS Statistics I Introduction to ANOVA, Regression, and Logistic Regression
-* Training. Managed by SAS Institute Indonesia. Jakarta, Mei dan Juli 2011.
-* Trainer – SAS® Programming I Essentials Training. Managed by SAS Institute Indonesia. Jakarta, Desember 2010.
-* Time Series Data Analysis using EViews Training (Managed by Astaga Karya
-* Mandiri). Directorate of Islamic Banking, Bank of Indonesia. Jakarta, Juni 2010.
+* SAS® Statistics I Introduction to ANOVA, Regression, and Logistic Regression Training. Managed by SAS Institute Indonesia. Jakarta, Mei dan Juli 2011.
+* SAS® Programming I Essentials Training. Managed by SAS Institute Indonesia. Jakarta, Desember 2010.
+* Time Series Data Analysis using EViews Training (Managed by Astaga Karya Mandiri). Directorate of Islamic Banking, Bank of Indonesia. Jakarta, Juni 2010.
 * General Introduction to Statistical Analysis Using SAS® 9.2 and SAS® Enterprise
 * Guide 4.2. Training (Managed by Astaga Karya Mandiri). Politeknik Perikanan Negeri Tual. Maluku Tenggara, Januari 2010.
 
